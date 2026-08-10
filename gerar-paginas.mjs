@@ -201,10 +201,18 @@ fs.writeFileSync('dist/terms.html', legal('Terms of Use', `
 <p>Product prices, availability, refund terms and guarantees are set by the seller and are shown on the seller&rsquo;s checkout page. Those terms, not ours, apply to your purchase.</p>`));
 
 fs.writeFileSync('dist/contact.html', legal('Contact', `
-<p>This site is an advertising publisher. For questions about the content of an advertisement on this site, write to the address below.</p>
-<p><strong>Email:</strong> <span id="pdc-contact-email">[PREENCHER: e-mail real de contato]</span></p>
-<p><strong>Postal address:</strong> <span>[PREENCHER: endereço postal real]</span></p>
-<p>For questions about an <strong>order, shipping, refund or the product itself</strong>, contact the seller directly through the support details on its own website. We do not process orders and cannot access order information.</p>`));
+<p>This site is an independent advertising publisher. Pages here are <strong>sponsored advertisements</strong>, not editorial reporting and not medical advice. We earn a commission when a reader buys through a link on our pages.</p>
+
+<h2 style="font-size:20px;margin-top:26px">About an order, a shipment or a refund</h2>
+<p>We do not sell, ship or process payments, and we cannot see order information. Purchases are completed on the seller&rsquo;s own website, and the seller&rsquo;s support is the only channel that can help with an order. The support details, refund policy and terms are published on the seller&rsquo;s checkout page, which is where the terms of your purchase are set.</p>
+
+<h2 style="font-size:20px;margin-top:26px">About a health question</h2>
+<p>We cannot answer questions about your health. Talk to your doctor or pharmacist &mdash; especially before combining any supplement with diuretics, anticoagulants or blood sugar medication.</p>
+
+<h2 style="font-size:20px;margin-top:26px">About the advertising on this site</h2>
+<p>For questions about the advertising content published here &mdash; including a request to correct something on a page &mdash; write to the address published on this page.</p>
+<p id="pdc-contact-email" style="font-family:Arial,Helvetica,sans-serif;font-size:15px"><!-- CONTATO: preencher com e-mail e endereco postal reais antes de escalar a midia --></p>
+`));
 
 fs.writeFileSync('dist/404.html', legal('Page Not Found', `
 <p>The page you asked for is not here. This site publishes a small number of sponsored advertising pages.</p>
