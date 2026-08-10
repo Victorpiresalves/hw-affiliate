@@ -20,7 +20,7 @@ const kit = JSON.parse(fs.readFileSync('v2_kit-conformidade.json', 'utf8'));
 const bloco = (p) => (kit.blocos_html || []).find((b) => b.nome.startsWith(p))?.html ?? '';
 const A = bloco('A'), B1 = bloco('B1'), B2 = bloco('B2'), C = bloco('C'), D = bloco('D'), F = bloco('F');
 
-const SLUG = { tornozelos: 'ankle-swelling', retencao: 'water-retention', rosto: 'puffy-face', suplemento: 'lymphatic-support' };
+const SLUG = { tornozelos: 'ankle-swelling', retencao: 'water-retention', rosto: 'puffy-face', suplemento: 'lymphatic-support', marca: 'linfaflow' };
 const CHECKOUT = 'https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918';
 const IMGS = fs.readdirSync('base/assets').filter((f) => /\.webp$/i.test(f)).sort();
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -67,8 +67,18 @@ fs.rmSync('dist', { recursive: true, force: true });
 const resumo = [];
 
 for (const rsa of rsas) {
-  const slug = SLUG[rsa.chave];
-  const pb = rsa.primeiro_bloco;
+ const slugBase = SLUG[rsa.chave];
+ // ⚠️ Um braço por URL, todos sob o MESMO primeiro segmento de path: o tracking-resolve casa
+ // slug = 1º segmento, então /ankle-swelling/a/ resolve o mesmo funil que o controle. Braço em
+ // slug separado (/ankle-swelling-a/) exigiria linha nova em pressell_deployments e o A/B
+ // nasceria medindo em funis diferentes.
+ const bracos = [
+   { sufixo: '', pb: rsa.primeiro_bloco, rotulo: 'controle' },
+   ...(rsa.variantes_primeiro_bloco || []).map((v, i) => ({ sufixo: ['a', 'b'][i], pb: { ...rsa.primeiro_bloco, h1: v.h1, subheadline: v.subheadline }, rotulo: v.rotulo })),
+ ];
+ for (const braco of bracos) {
+  const slug = braco.sufixo ? slugBase + '/' + braco.sufixo : slugBase;
+  const pb = braco.pb;
   const ancoras = (rsa.sitelinks || []).map((s) => String(s.ancora).replace('#', ''));
   const idMecanismo = ancoras.find((a) => ANCORAS_MECANISMO.includes(a)) || 'why-movement';
   const idRitual = ancoras.find((a) => ANCORAS_RITUAL.includes(a)) || 'the-ritual';
@@ -160,7 +170,8 @@ ${F}
     'labs look normal', 'no test measures', 'Master Health Research', 'cure', 'guarantee'];
   const sobrou = PROIBIDO.filter((p) => html.toLowerCase().includes(p.toLowerCase()));
   const ancorasFaltando = ancoras.filter((a) => !html.includes(`id="${a}"`));
-  resumo.push({ slug, kb: Math.round(Buffer.byteLength(html) / 1024), sobrou, ancorasFaltando, ctas: (html.match(/data-pdc-aff-param/g) || []).length });
+  resumo.push({ slug, rotulo: braco.rotulo, kb: Math.round(Buffer.byteLength(html) / 1024), sobrou, ancorasFaltando, ctas: (html.match(/data-pdc-aff-param/g) || []).length });
+ }
 }
 
 // Páginas legais + raiz. Sem elas o rodapé linka pra 404 e o revisor vê site inacabado.
