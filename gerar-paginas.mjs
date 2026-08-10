@@ -143,7 +143,7 @@ ${C}
 
 <footer><div class="wrap">
 ${F}
-<p style="margin-top:14px"><a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms of Use</a> &middot; <a href="/contact.html">Contact</a></p>
+<p style="margin-top:14px"><a href="/privacy">Privacy Policy</a> &middot; <a href="/terms">Terms of Use</a> &middot; <a href="/contact">Contact</a></p>
 </div></footer>
 </body>
 </html>`;
@@ -175,7 +175,7 @@ fs.writeFileSync('dist/index.html', legal('National Health News', `
 <p>This site publishes <strong>sponsored advertising content</strong> about consumer wellness products. Every page here is an advertisement, not editorial reporting and not medical advice.</p>
 <p>We earn a commission when a reader buys through a link on our pages. That commission never changes the price you pay.</p>
 <p style="font-size:14px;color:#555">These statements have not been evaluated by the Food and Drug Administration. Products discussed are not intended to diagnose, treat, cure, or prevent any disease. Talk to a healthcare professional before starting any supplement.</p>
-<p><a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms of Use</a> &middot; <a href="/contact.html">Contact</a></p>`, 'National Health News'));
+<p><a href="/privacy">Privacy Policy</a> &middot; <a href="/terms">Terms of Use</a> &middot; <a href="/contact">Contact</a></p>`, 'National Health News'));
 
 fs.writeFileSync('dist/privacy.html', legal('Privacy Policy', `
 <p>We collect limited technical information when you visit: pages viewed, referring source, approximate location derived from IP address, and identifiers passed by advertising platforms in the page address. We use it to measure which advertisements work.</p>
