@@ -24,7 +24,7 @@ const A = bloco('A'), B1 = bloco('B1'), B2 = bloco('B2'), C = bloco('C'), D = bl
 // de garantia do Advertorial 3). É o único canal que resolve pedido, envio e reembolso — a compra
 // acontece no site dele, não aqui, e mandar o leitor para nós nesse caso é mandá-lo para o vazio.
 const SELLER = {
-  email: 'support@linfaflow.com',
+  email: 'support&#64;linfaflow.com',
   telSupport: '+1 (888) 811-1186', telSupportRaw: '+18888111186',
   telRefund: '+1 (800) 390-6035', telRefundRaw: '+18003906035',
   garantia: '60-day',
@@ -32,7 +32,7 @@ const SELLER = {
 // ⚠️ E-mail do PUBLISHER no próprio domínio. NÃO inventar endereço postal nem razão social: numa
 // página de saúde, identidade fabricada é literalmente o padrão de deturpação que suspende conta —
 // e é o único campo que alguém checaria. Vazio é ruim; falso é pior.
-const PUBLISHER = { nome: 'National Health News', email: 'contact@nationalhealthnews.blog' };
+const PUBLISHER = { nome: 'National Health News', email: 'contact&#64;nationalhealthnews.blog' };
 
 // ⚠️ O bloco F do kit vem com PLACEHOLDER LITERAL ("[RAZAO SOCIAL EXATA DO ANUNCIANTE]",
 // "[ENDERECO POSTAL COMPLETO]", "[EMAIL@SEU-DOMINIO]") e foi ao ar assim nas 15 páginas. Aqui ele é
