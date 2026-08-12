@@ -27,8 +27,13 @@ const SELLER = {
   email: 'support&#64;linfaflow.com',
   telSupport: '+1 (888) 811-1186', telSupportRaw: '+18888111186',
   telRefund: '+1 (800) 390-6035', telRefundRaw: '+18003906035',
-  garantia: '60-day',
 };
+// ⚠️ NÃO existe "a garantia", e por isso esta chave foi REMOVIDA. O vendedor publica TRÊS janelas
+// diferentes, medidas nas páginas dele em 11/08/2026: 30 dias na página do produto, 60 na descrição
+// do checkout, 90 no rodapé do checkout. A constante já foi `garantia: '60-day'` e saiu impressa no
+// /contact — eu escolhi um dos três sem saber que havia três. Prazo de reembolso é termo material:
+// afirmar o número errado é publicar uma condição de compra falsa. Se o vendedor unificar, ela
+// volta; até lá a página manda conferir no checkout, que é onde o termo vincula.
 // ⚠️ E-mail do PUBLISHER no próprio domínio. NÃO inventar endereço postal nem razão social: numa
 // página de saúde, identidade fabricada é literalmente o padrão de deturpação que suspende conta —
 // e é o único campo que alguém checaria. Vazio é ruim; falso é pior.
@@ -135,7 +140,7 @@ ${D}
 
   <h2 id="how-it-works">What this page is about</h2>
   <p>By late afternoon, shoes feel tighter than they did at breakfast. Socks leave a line that is still there an hour after you take them off. Rings that slid on easily in the morning have to be worked off at night. If that is your day, you are not imagining it, and you are not alone.</p>
-  <p>This page describes a dietary supplement made of four traditional botanicals, taken as two drops under the tongue each morning. It is an advertisement. It is not medical advice, and it does not describe a treatment for any condition.</p>
+  <p>This page describes a dietary supplement made of four traditional botanicals, taken as one to two droppers under the tongue, once or twice daily. It is an advertisement. It is not medical advice, and it does not describe a treatment for any condition.</p>
 
   <h2 id="${idMecanismo}">How lymph actually moves</h2>
   <figure><img src="./assets/${IMGS[1] || IMGS[0]}" alt="Illustration of fluid movement"></figure>
@@ -147,7 +152,7 @@ ${D}
   <p style="font-size:15px;color:#555">The full ingredient list and amounts are shown on the product label on the seller&rsquo;s website.</p>
 
   <h2 id="${idRitual}">The daily routine</h2>
-  <p>Two drops under the tongue, once in the morning. It takes about thirty seconds and does not need to be taken with food. There is nothing to swallow and nothing to prepare.</p>
+  <p>One to two droppers (1&ndash;2 mL) under the tongue, once or twice daily, as the seller instructs. It takes about thirty seconds and does not need to be taken with food. There is nothing to swallow and nothing to prepare.</p>
   <p>People choose a liquid for simple reasons: it is quick, it is easy to remember, and it is easier for some people than capsules. Whether you keep using it is a matter of whether the routine fits your morning.</p>
 
   ${cta('See the Full Ingredient List')}
@@ -158,10 +163,10 @@ ${D}
 
   <h2 id="faq">Common questions</h2>
   <dl class="faq">
-    <dt>How is it taken?</dt><dd>Two drops under the tongue in the morning.</dd>
+    <dt>How is it taken?</dt><dd>One to two droppers under the tongue in the morning.</dd>
     <dt>What does it taste like?</dt><dd>It is a herbal liquid with a plant-forward taste. Most people take it with water.</dd>
     <dt>Can I take it with my current medication?</dt><dd>Ask your doctor or pharmacist first, especially with diuretics, anticoagulants or blood sugar medication. That is the honest answer and the only one we will give.</dd>
-    <dt>How long does a bottle last?</dt><dd>At two drops a day, the seller states the supply length on the product page.</dd>
+    <dt>How long does a bottle last?</dt><dd>The seller lists 59 servings of 1 mL per container, so how long a bottle lasts depends on whether you take one or two droppers, once or twice a day.</dd>
     <dt>What about returns?</dt><dd>The seller&rsquo;s refund policy and terms are on its own checkout page, and they are the terms that apply.</dd>
   </dl>
 
@@ -232,7 +237,7 @@ fs.writeFileSync('dist/contact.html', legal('Contact', `
   Phone: <a href="tel:${SELLER.telSupportRaw}">${SELLER.telSupport}</a><br>
   Refunds and cancellations: <a href="tel:${SELLER.telRefundRaw}">${SELLER.telRefund}</a>
 </p>
-<p style="font-size:15px;color:#555">The seller states a ${SELLER.garantia} money-back guarantee. The refund policy and the terms that apply to your purchase are the ones published on the seller&rsquo;s checkout page.</p>
+<p style="font-size:15px;color:#555">The refund policy and the terms that apply to your purchase are the ones published on the seller&rsquo;s checkout page &mdash; and it is worth reading them <em>there</em>, at the moment you buy. On 11 August 2026 the seller&rsquo;s own pages carried <strong>three different refund windows</strong>: 30 days on the product page, 60 days in the checkout description and 90 days in the checkout footer.</p>
 
 <h2 style="font-size:20px;margin-top:26px">About a health question</h2>
 <p>We cannot answer questions about your health. Talk to your doctor or pharmacist &mdash; especially before combining any supplement with diuretics, anticoagulants or blood sugar medication.</p>
