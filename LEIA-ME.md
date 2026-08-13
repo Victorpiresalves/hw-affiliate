@@ -18,6 +18,18 @@ nunca os dois) — é o teste A/B de congruência busca → anúncio → página
   — cada um com `/a/` e `/b/` (controle + 2 braços = 15 páginas)
 - `index.html`, `404.html`, `privacy.html`, `terms.html`, `contact.html`
 
+## Páginas-história ("mom de Ohio") — `/<tema>/story/`
+
+Uma por ad group da campanha `24120677924` (2026-08-13): `ankle-swelling/story/`,
+`water-retention/story/`, `puffy-face/story/`, `lymphatic-support/story/`, `linfaflow/story/`.
+São a NARRATIVA do Advertorial 3 do fornecedor reescrita **Google-safe**: sem médico fictício,
+sem quase-morte/clot, sem timeline de resultado, sem "leaky veins" — persona declarada como
+**história composta** (disclosure no byline e no FAQ), blocos de conformidade idênticos aos das
+páginas A/B, dek = subheadline sobrevivente do `anuncios.json`, âncoras dos sitelinks de cada
+grupo garantidas. O primeiro bloco de cada uma ecoa a keyword do grupo (congruência).
+Assets: referenciam `../assets/` (o do tema). O tracking herda das linhas já existentes em
+`pressell_deployments` (o `tracking-resolve` casa por `path.startsWith('/<slug>/')`).
+
 ## ⚠️ Material do fornecedor NÃO está aqui, de propósito
 
 Os advertoriais do H&W (`h2/`, `h-w-linfaflow-...`) foram removidos do `main` porque **não
