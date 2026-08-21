@@ -1435,71 +1435,7 @@ document.addEventListener('click', function(e){
   if (a) e.preventDefault();
 }, false);
 </script>
-
-<style id="pdc-exit-css">
-.pdcx-ov{position:fixed;inset:0;z-index:2147483000;background:rgba(12,12,14,.62);backdrop-filter:blur(2px);display:none;align-items:center;justify-content:center;padding:18px}
-.pdcx-ov.on{display:flex}
-.pdcx{background:#fff;color:#1a1a1a;max-width:430px;width:100%;border-radius:14px;padding:26px 24px 22px;text-align:center;position:relative;box-shadow:0 24px 70px rgba(0,0,0,.4);font-family:inherit}
-.pdcx-x{position:absolute;top:8px;right:12px;background:none;border:0;font-size:30px;line-height:1;color:#999;cursor:pointer;padding:4px}
-.pdcx-kick{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.08em;color:#b3261e;text-transform:uppercase;margin-bottom:10px}
-.pdcx h3{font-size:24px;line-height:1.2;margin:0 0 10px;font-weight:800}
-.pdcx img{max-width:78%;height:auto;margin:6px auto 12px;display:block}
-.pdcx p{font-size:16px;line-height:1.45;color:#444;margin:0 0 16px}
-.pdcx-go{display:block;width:100%;background:#1a7f4e;color:#fff;font-size:19px;font-weight:800;padding:15px 12px;border-radius:10px;border:0;cursor:pointer;text-decoration:none}
-.pdcx-no{display:block;margin:10px auto 0;background:none;border:0;color:#8a8a8a;font-size:13px;cursor:pointer;text-decoration:underline}
-</style>
-<div class="pdcx-ov" id="pdcxOv" role="dialog" aria-modal="true" aria-label="Before you go">
- <div class="pdcx">
-  <button class="pdcx-x" id="pdcxX" aria-label="Close">&times;</button>
-  <span class="pdcx-kick">Wait &mdash; before you go</span>
-  <h3>Not sure yet? That's fair.</h3>
-  <img src="./assets/popup-pack.webp" alt="Linfaflow bottles" width="320" height="200" loading="lazy">
-  <p>See the <b>5 reasons</b> women with swollen, heavy legs are switching to Linfaflow&reg; &mdash; in 2 minutes, no fluff.</p>
-  <a class="pdcx-go" id="pdcxGo" href="#">SHOW ME THE 5 REASONS &rarr;</a>
-  <button class="pdcx-no" id="pdcxNo">No thanks, I'll keep reading</button>
- </div>
-</div>
-<script>(function(){
-var KEY='_pdc_exit_shown';
-try{if(sessionStorage.getItem(KEY))return}catch(_){}
-var ov=document.getElementById('pdcxOv');if(!ov)return;
-function t(n,d){try{if(window.pdcTrack)window.pdcTrack(n,{payload:d||{},platforms:[]})}catch(_){}}
-// href montado por location.origin DE PROPÓSITO: o worker injeta <base> da origem sandbox,
-// e um href relativo mandaria o visitante para fora do domínio público.
-var go=document.getElementById('pdcxGo');
-(function(){var p=new URLSearchParams(location.search);p.set('pg','lst');go.href=location.origin+'/linfaflow/?'+p.toString()})();
-var mostrou=false;
-function abrir(motivo){
-  if(mostrou)return;
-  // nunca por cima do quiz: os dois sao modais de tela cheia (adv1 nao tem quiz; null-safe)
-  var q=document.getElementById('quizOverlay');
-  if(q&&q.classList.contains('open'))return;
-  mostrou=true;
-  try{sessionStorage.setItem(KEY,'1')}catch(_){}
-  ov.classList.add('on');document.body.style.overflow='hidden';
-  t('popup_saida_visto',{motivo:motivo});
-}
-function fechar(){ov.classList.remove('on');document.body.style.overflow='';}
-document.getElementById('pdcxX').addEventListener('click',function(){fechar();t('popup_saida_fechado',{})});
-document.getElementById('pdcxNo').addEventListener('click',function(){fechar();t('popup_saida_fechado',{})});
-ov.addEventListener('click',function(e){if(e.target===ov){fechar();t('popup_saida_fechado',{})}});
-go.addEventListener('click',function(){t('popup_saida_clicado',{})});
-// desktop: mouse saindo pelo topo
-document.addEventListener('mouseout',function(e){
-  if(!e.relatedTarget&&e.clientY<=0)abrir('mouseleave');
-});
-// celular: rolagem-para-cima rápida, depois de 15s e 600px de profundidade
-var t0=Date.now(),maxY=0,lastY=0,lastT=0;
-window.addEventListener('scroll',function(){
-  var y=window.scrollY||0,agora=Date.now();
-  if(y>maxY)maxY=y;
-  var dy=lastY-y,dt=agora-lastT;
-  lastY=y;lastT=agora;
-  if(Date.now()-t0<15000)return;
-  if(maxY<600)return;
-  if(dy>220&&dt<400)abrir('scroll_up');
-},{passive:true});
-})();</script>
+
 <script>(function(){var i=0,h=setInterval(function(){
 if(window.pdcTrack){clearInterval(h);try{window.pdcTrack('variante_vista',{payload:{v:'adv2-tornozelos'},platforms:[]})}catch(_){}}
 else if(++i>20)clearInterval(h);},500);})();</script>
