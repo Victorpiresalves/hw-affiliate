@@ -742,7 +742,7 @@ function t(n,d){try{if(window.pdcTrack)window.pdcTrack(n,{payload:d||{},platform
 // href montado por location.origin DE PROPÓSITO: o worker injeta <base> da origem sandbox,
 // e um href relativo mandaria o visitante para fora do domínio público.
 var go=document.getElementById('pdcxGo');
-go.href=location.origin+'/linfaflow/?pg=lst';
+(function(){var p=new URLSearchParams(location.search);p.set('pg','lst');go.href=location.origin+'/linfaflow/?'+p.toString()})();
 var mostrou=false;
 function abrir(motivo){
   if(mostrou)return;
