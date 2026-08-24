@@ -875,7 +875,7 @@ jQuery.noConflict();
   <img src="./assets/ruth-e-alan.jpg" alt="" loading="eager">
   <figcaption>Ruth and me. It is the last picture of the two of us. When her son called, he had to be told who I was.</figcaption>
 </figure>
-<figure class="fig"><img src="./assets/hero-thumb-test.jpg" alt="" loading="eager" width="1200" height="675"><figcaption>Press your thumb above your ankle bone. Hold three seconds. Let go &mdash; and count.</figcaption></figure>
+<figure class="fig"><img id="pdcHero" src="./assets/hero-doctor-ba.jpg" alt="" loading="eager" width="1440" height="854"><figcaption id="pdcHeroCap">Dr. Alan Reeve with the four-plant tincture &mdash; and one of his patients at week 1 and week 8. The dent test is in the article below; do it on your own ankle tonight.</figcaption></figure>
 
 <div class="body">
 <p class="big">If the dent is still there at five, keep reading. If it&rsquo;s still there at eight, read this tonight, not tomorrow.</p>
@@ -1553,6 +1553,7 @@ document.addEventListener('click', function(e){
   else if(/puffy/.test(d))g="puffy";
   var t=0,iv=setInterval(function(){
     if(window.pdcTrack){clearInterval(iv);
+      try{var heroImg=document.getElementById("pdcHero");if(heroImg){var mp={rosto:"./assets/hero-doctor-ba.jpg",puffy:"./assets/hero-doctor-ba-feet.jpg",tratamento:"./assets/hero-doctor-ba.jpg",retencao:"./assets/hero-doctor-ba.jpg",marca:"./assets/hero-doctor-ba.jpg",tornozelos:"./assets/hero-doctor-ba.jpg"};if(mp[g])heroImg.src=mp[g]}}catch(_){}
       try{window.pdcTrack("variante_vista",{payload:{v:"adv5-irma"},platforms:[]});
           window.pdcTrack("dobra_vista",{payload:{grupo:g,keyword:d||null},platforms:[]});}catch(_){}}
     else if(++t>20){clearInterval(iv)}
