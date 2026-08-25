@@ -24734,7 +24734,8 @@
                         try { if (window.utmify && window.utmify.track) window.utmify.track('InitiateCheckout'); } catch (_) { }
                         window.location.href = (window.pdcAffiliateUrl ? window.pdcAffiliateUrl(withParams(url)) : withParams(url))
                       }
-                      document.querySelectorAll('.glance-cta, .cta-btn').forEach(function (b) { b.id = 'DTC_CTA'; b.addEventListener('click', openQuiz) }); document.getElementById('qClose').addEventListener('click', closeQuiz); overlay.addEventListener('click', function (e) { if (e.target === overlay) closeQuiz(); }); document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('open')) closeQuiz(); })
+                      document.querySelectorAll('.glance-cta, .cta-btn').forEach(function (b) { b.id = 'DTC_CTA'; b.addEventListener('click', openQuiz) }); document.addEventListener('pdc:abrir-quiz', function (e) { e.preventDefault(); openQuiz() });
+                      document.getElementById('qClose').addEventListener('click', closeQuiz); overlay.addEventListener('click', function (e) { if (e.target === overlay) closeQuiz(); }); document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('open')) closeQuiz(); })
                     })()</script>
                   <script>(function () {
                         var menu = document.getElementById('mobileMenu'); var btns = document.querySelectorAll('.js-menu'); function setExpanded(v) { btns.forEach(function (b) { b.classList.toggle('open', v); b.setAttribute('aria-expanded', v ? 'true' : 'false') }) }
