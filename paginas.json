@@ -255,10 +255,10 @@
     ]
   },
   "hw-linfaflow-dtc-advertorial-3-doctor": {
-    "versao": "v2-41a9774",
-    "hash": "41a977478ec6384951951cb868f492875b029bee123d73d613258052ccb32dd7",
-    "atualizado_em": "2026-08-28T02:48:44.825Z",
-    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "versao": "v3-d5cf36e",
+    "hash": "d5cf36e0954ddb468ca1ca7d86d7589dd1054474c8b03665eee96e51e6468127",
+    "atualizado_em": "2026-08-28T22:42:27.076Z",
+    "commit": "a6d1aeafb2ca47743006a83e0647dfc43afc4cc2",
     "historico": [
       {
         "versao": "v1-397c147",
@@ -273,6 +273,13 @@
         "em": "2026-08-28T02:48:44.825Z",
         "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
         "nota": "dobra_congruente: dobra/keyword passam a ir em payload (o track() so le data.payload)"
+      },
+      {
+        "versao": "v3-d5cf36e",
+        "hash": "d5cf36e0954ddb468ca1ca7d86d7589dd1054474c8b03665eee96e51e6468127",
+        "em": "2026-08-28T22:42:27.076Z",
+        "commit": "a6d1aeafb2ca47743006a83e0647dfc43afc4cc2",
+        "nota": "variante_vista + dobra de tornozelos: a pagina passa a se identificar e a keyword campea passa a emitir dobra"
       }
     ]
   },

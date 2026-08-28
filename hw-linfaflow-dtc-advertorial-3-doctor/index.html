@@ -3,7 +3,7 @@
 
 <head>
 <meta name="pdc-page" content="hw-linfaflow-dtc-advertorial-3-doctor">
-<meta name="pdc-version" content="v2-41a9774">
+<meta name="pdc-version" content="v3-d5cf36e">
   <script
     data-no-optimize="1">var litespeed_docref = sessionStorage.getItem("litespeed_docref"); litespeed_docref && (Object.defineProperty(document, "referrer", { get: function () { return litespeed_docref } }), sessionStorage.removeItem("litespeed_docref"));</script>
   <meta charset="UTF-8">
@@ -23426,6 +23426,27 @@
                         <h1 class="headline" id="pdcH1">Foot and Ankle Swelling Is Not Always a Vein Problem. A Harvard-Trained Doctor Names the Drain Nobody Chases &mdash; After Eleven Years of Silence With His Own Sister Ended in an Ambulance.</h1>
                         <p class="kicker" id="pdcSub" style="font-size:16px;">She thought her ankles were just her age. Her son found her on the hallway floor. The brother she had not spoken to in eleven years was still listed as her emergency contact &mdash; a card in her wallet still said BROTHER, and it is the only reason he was in that room. The leg was already gone before the phone rang. What he did after is why this article exists.</p>
                         <script>
+                        /* QUEM SOU EU. Sem isto a pagina nao se identifica: o card "Paginas no ar" e
+                           toda comparacao entre paginas ficam cegos (o adv1 e o adv2 emitem, esta nao
+                           emitia). O nome sai do proprio <meta pdc-page> para nunca divergir do carimbo
+                           de versao. O tracking.js e async e injetado pelo worker, entao espera ele
+                           aparecer em vez de perder o evento -- mesmo molde do bloco da dobra. */
+                        (function () {
+                          try {
+                            var m = document.querySelector('meta[name="pdc-page"]');
+                            var v = m && m.content ? m.content : "";
+                            if (!v) return;
+                            var t = 0;
+                            var esperar = setInterval(function () {
+                              if (window.pdcTrack) {
+                                clearInterval(esperar);
+                                try { window.pdcTrack("variante_vista", { payload: { v: v }, platforms: [] }) } catch (e) {}
+                              } else if (++t > 20) clearInterval(esperar);
+                            }, 500);
+                          } catch (e) {}
+                        })();
+                        </script>
+                        <script>
                         /* DOBRA CONGRUENTE POR PALAVRA-CHAVE. Le o ValueTrack {keyword} da URL (o
                            final_url_suffix da campanha o poe la -- medido: 446 de 448 sessoes pagas chegam
                            com ?keyword=) e troca H1 + subtitulo. O CORPO nao muda: toda variante tem que
@@ -23449,13 +23470,18 @@
                                "It pulls water out of your blood through your kidneys and leaves the fluid in your tissue exactly where it was. He wrote that prescription for six years for the one person he should have looked at twice."],
                               ["puffy", /puffy/,
                                "Puffy Feet by 5 PM? It Is Not the Salt, Not Your Age, and Not Always the Veins &mdash; A Harvard-Trained Doctor Names the Drain Nobody Chases, After Eleven Years of Silence With His Own Sister.",
-                               "Shoes that pinch by noon. Socks that leave trenches. Ankles that disappear by evening. One drain &mdash; and a thumb test that has been telling your doctor the answer at every single visit."]
+                               "Shoes that pinch by noon. Socks that leave trenches. Ankles that disappear by evening. One drain &mdash; and a thumb test that has been telling your doctor the answer at every single visit."],
+                              /* ULTIMA de proposito: e o balde do resto do universo de tornozelo/pe,
+                                 incluindo "foot and ankle swelling" -- a keyword que mais vende (4 das 9
+                                 vendas ate 27/08) e que ate aqui nao emitia dobra nenhuma. H1 e subtitulo
+                                 NULOS: o padrao da pagina ja fala com essa busca, entao aqui so se MEDE. */
+                              ["tornozelos", /ankle|foot|feet|swell/, null, null]
                             ];
                             for (var i = 0; i < D.length; i++) {
                               if (D[i][1].test(kw)) {
                                 var h1 = document.getElementById("pdcH1"), sb = document.getElementById("pdcSub");
-                                if (h1) h1.innerHTML = D[i][2];
-                                if (sb) sb.innerHTML = D[i][3];
+                                if (h1 && D[i][2]) h1.innerHTML = D[i][2];
+                                if (sb && D[i][3]) sb.innerHTML = D[i][3];
                                 /* qual dobra a pessoa viu -- sem isso nao da para saber qual converteu.
                                    O tracking.js e async, entao espera ele aparecer em vez de perder o evento. */
                                 var nome = D[i][0], t = 0;
