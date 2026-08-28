@@ -2,6 +2,8 @@
 <html lang="en-US">
 
 <head>
+<meta name="pdc-page" content="hw-linfaflow-dtc-advertorial-3-doctor">
+<meta name="pdc-version" content="v2-41a9774">
   <script
     data-no-optimize="1">var litespeed_docref = sessionStorage.getItem("litespeed_docref"); litespeed_docref && (Object.defineProperty(document, "referrer", { get: function () { return litespeed_docref } }), sessionStorage.removeItem("litespeed_docref"));</script>
   <meta charset="UTF-8">
@@ -23460,7 +23462,7 @@
                                 var esperar = setInterval(function () {
                                   if (window.pdcTrack) {
                                     clearInterval(esperar);
-                                    try { window.pdcTrack("dobra_congruente", { dobra: nome, keyword: kw, platforms: [] }) } catch (e) {}
+                                    try { window.pdcTrack("dobra_congruente", { payload: { dobra: nome, keyword: kw }, platforms: [] }) } catch (e) {}
                                   } else if (++t > 20) clearInterval(esperar);
                                 }, 500);
                                 break;

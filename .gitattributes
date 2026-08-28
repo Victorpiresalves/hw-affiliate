@@ -1,0 +1,4 @@
+# O hook é executado pelo sh do git: com core.autocrlf=true ele sairia CRLF no checkout e quebraria.
+.githooks/pre-commit text eol=lf
+# O manifesto é gerado com LF pelo carimbar.mjs em qualquer SO; declarar evita o aviso de conversão a cada commit.
+paginas.json text eol=lf

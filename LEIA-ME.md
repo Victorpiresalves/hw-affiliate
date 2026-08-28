@@ -12,6 +12,43 @@ node gerar-paginas.mjs        # lê anuncios.json e escreve dist/
 O que muda entre as páginas de um mesmo grupo é **só o primeiro bloco** (H1 ou subheadline,
 nunca os dois) — é o teste A/B de congruência busca → anúncio → página.
 
+## Carimbo de versão das páginas (`carimbar.mjs` + `paginas.json`)
+
+Cada `<pasta>/index.html` (até 3 níveis; a raiz, `404.html` e as páginas legais ficam de fora)
+carrega duas metas logo depois do **primeiro** `<head>`:
+
+```
+<meta name="pdc-page" content="ankle-swelling/adv">
+<meta name="pdc-version" content="v2-9c27787">
+```
+
+O `tracking.js` lê as duas e grava na sessão qual página **e qual versão** a pessoa viu — é o que
+responde "qual palavra-chave × criativo × versão de página vendeu". A versão é **imutável**:
+`hash7` = sha256 do arquivo sem as duas metas e com quebras de linha em LF (CRLF↔LF não muda a
+versão); `N` é sequencial **por slug** e mora em `paginas.json`, que guarda a versão corrente e o
+histórico (`versao`, `hash`, `em`, `commit`, `nota`). Conteúdo igual = mesma versão = nada é
+escrito; conteúdo diferente = N+1 e uma entrada nova no histórico.
+
+```
+node carimbar.mjs                  # carimba o que mudou e atualiza paginas.json
+node carimbar.mjs --check          # não escreve; sai com 1 se há página sem carimbo ou desatualizada
+node carimbar.mjs --nota "texto"   # anota o motivo nas versões criadas nesta rodada
+node --test carimbar.test.mjs      # testes (só pastas temporárias)
+```
+
+**Ative o hook uma vez por clone** — a cada commit ele carimba e faz `git add` do que carimbou
+mais o `paginas.json`:
+
+```
+git config core.hooksPath .githooks
+```
+
+Gotchas: o `commit` gravado no manifesto é o HEAD no momento do carimbo (dentro do hook, é o
+commit **pai** — o que está nascendo ainda não existe); o hook carimba **todas** as páginas, então
+página editada e não staged entra no commit (ele avisa na tela); arquivo minificado (`<head>` no
+meio da linha) recebe as metas coladas ao `<head>`, sem ganhar linhas; **nunca edite as metas à
+mão** — o carimbo é derivado do conteúdo, e `--check` reprova o que divergir.
+
 ## Estrutura
 
 - `ankle-swelling/`, `water-retention/`, `puffy-face/`, `lymphatic-support/`, `linfaflow/`

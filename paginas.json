@@ -1,0 +1,534 @@
+{
+  "adv1-tornozelos": {
+    "versao": "v1-796324a",
+    "hash": "796324a7b097ae5d000b7cf4a4ffe7a38036684f18e7b60d73762d37e9227a0a",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-796324a",
+        "hash": "796324a7b097ae5d000b7cf4a4ffe7a38036684f18e7b60d73762d37e9227a0a",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "adv2-tornozelos": {
+    "versao": "v1-1073e67",
+    "hash": "1073e6716833a3b2e0947fe9963ea11199ff5e0b4014b3221628afa68e188634",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-1073e67",
+        "hash": "1073e6716833a3b2e0947fe9963ea11199ff5e0b4014b3221628afa68e188634",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "adv3-retencao": {
+    "versao": "v1-a8260d7",
+    "hash": "a8260d7d5e7bb5163e62575c076bf3ce2b594e5b07742bd4ac8d67e45703a9ad",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-a8260d7",
+        "hash": "a8260d7d5e7bb5163e62575c076bf3ce2b594e5b07742bd4ac8d67e45703a9ad",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "adv3-rosto": {
+    "versao": "v1-387bb53",
+    "hash": "387bb537ccff960aa6b79b5203ca2b269a2dad26709a2730503a30b78d23e3bf",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-387bb53",
+        "hash": "387bb537ccff960aa6b79b5203ca2b269a2dad26709a2730503a30b78d23e3bf",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "adv3-suplemento": {
+    "versao": "v1-c458182",
+    "hash": "c458182b652cc7f103fdef9fab2fb239b563512c2cc4f393c223ef39d0f1686b",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-c458182",
+        "hash": "c458182b652cc7f103fdef9fab2fb239b563512c2cc4f393c223ef39d0f1686b",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "adv4-lymph-sludge": {
+    "versao": "v1-45a95cc",
+    "hash": "45a95cc5865f9968f1b5991d2be913d33f25a254e57f2ffb51786f76b44cfd27",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-45a95cc",
+        "hash": "45a95cc5865f9968f1b5991d2be913d33f25a254e57f2ffb51786f76b44cfd27",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "adv5-irma": {
+    "versao": "v1-7ef3bb5",
+    "hash": "7ef3bb57b2b58dac2436a02e4735704e8643df89183d4d7a0dc4ebd173ae9206",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-7ef3bb5",
+        "hash": "7ef3bb57b2b58dac2436a02e4735704e8643df89183d4d7a0dc4ebd173ae9206",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "ankle-swelling": {
+    "versao": "v1-df55771",
+    "hash": "df557710c17bb95a70feeef7c6a3f387ed299985a6723f8c77054473e2cc47b2",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-df55771",
+        "hash": "df557710c17bb95a70feeef7c6a3f387ed299985a6723f8c77054473e2cc47b2",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "ankle-swelling/a": {
+    "versao": "v1-f38e29a",
+    "hash": "f38e29ab3ddfcacbc438b7d516740019583ccfb3608c6a25c8e8cb55ac7fc7f5",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-f38e29a",
+        "hash": "f38e29ab3ddfcacbc438b7d516740019583ccfb3608c6a25c8e8cb55ac7fc7f5",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "ankle-swelling/adv": {
+    "versao": "v1-9c27787",
+    "hash": "9c2778787737133186ea2ca52428683be7057e102ef71fc4de848da1cd3eeaba",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-9c27787",
+        "hash": "9c2778787737133186ea2ca52428683be7057e102ef71fc4de848da1cd3eeaba",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "ankle-swelling/b": {
+    "versao": "v1-a641ee1",
+    "hash": "a641ee1eee0e90913f3fc921eb827bd3b5c63f21c2a3c3f8fef8103b7c28629a",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-a641ee1",
+        "hash": "a641ee1eee0e90913f3fc921eb827bd3b5c63f21c2a3c3f8fef8103b7c28629a",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "ankle-swelling/story": {
+    "versao": "v1-c51b0bc",
+    "hash": "c51b0bc571dcf1f13ee9e016def83717d7b61c2f5759dc1a4782e7af2aa45670",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-c51b0bc",
+        "hash": "c51b0bc571dcf1f13ee9e016def83717d7b61c2f5759dc1a4782e7af2aa45670",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "hw-linfaflow-dtc-advertorial-3": {
+    "versao": "v1-22c5d5b",
+    "hash": "22c5d5b04f59f48a6a3c807d22420ebd3f9024c2f31acc3e42b5c88b3bdb5c81",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-22c5d5b",
+        "hash": "22c5d5b04f59f48a6a3c807d22420ebd3f9024c2f31acc3e42b5c88b3bdb5c81",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "hw-linfaflow-dtc-advertorial-3-doctor": {
+    "versao": "v2-41a9774",
+    "hash": "41a977478ec6384951951cb868f492875b029bee123d73d613258052ccb32dd7",
+    "atualizado_em": "2026-08-28T02:48:44.825Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-397c147",
+        "hash": "397c1474e96008d8d0a46f648aab1882dc0e41942dde0c5cd6881342c6d30dac",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      },
+      {
+        "versao": "v2-41a9774",
+        "hash": "41a977478ec6384951951cb868f492875b029bee123d73d613258052ccb32dd7",
+        "em": "2026-08-28T02:48:44.825Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "dobra_congruente: dobra/keyword passam a ir em payload (o track() so le data.payload)"
+      }
+    ]
+  },
+  "hw-linfaflow-dtc-listicle": {
+    "versao": "v1-40613c8",
+    "hash": "40613c89ac61ef865c3e48e7358545d1c047951cba8e0dc7f1e4204a0fb75d11",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-40613c8",
+        "hash": "40613c89ac61ef865c3e48e7358545d1c047951cba8e0dc7f1e4204a0fb75d11",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "linfaflow": {
+    "versao": "v1-daeaff4",
+    "hash": "daeaff41419d0bceaf47cba6aaf5f718c30c6f2da2bc767e4c7a56291f38153e",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-daeaff4",
+        "hash": "daeaff41419d0bceaf47cba6aaf5f718c30c6f2da2bc767e4c7a56291f38153e",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "linfaflow/a": {
+    "versao": "v1-a0d3c36",
+    "hash": "a0d3c3622f060fb681b721ca84a32999f24988e42985a4db5c63598552eb121d",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-a0d3c36",
+        "hash": "a0d3c3622f060fb681b721ca84a32999f24988e42985a4db5c63598552eb121d",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "linfaflow/adv": {
+    "versao": "v1-b00d624",
+    "hash": "b00d6244841e023c2c653874ba5cb9d972f0328ccc0b3935c6f323c4d51e7315",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-b00d624",
+        "hash": "b00d6244841e023c2c653874ba5cb9d972f0328ccc0b3935c6f323c4d51e7315",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "linfaflow/b": {
+    "versao": "v1-1577c41",
+    "hash": "1577c4141b3429449f50034f06e684f56abe50742217a8b7d9433864052801ee",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-1577c41",
+        "hash": "1577c4141b3429449f50034f06e684f56abe50742217a8b7d9433864052801ee",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "linfaflow/story": {
+    "versao": "v1-85823c6",
+    "hash": "85823c6cef7d2cab6a39fcb5ca00b606cb05b3720bb87e70b313362f049aa91a",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-85823c6",
+        "hash": "85823c6cef7d2cab6a39fcb5ca00b606cb05b3720bb87e70b313362f049aa91a",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "lymphatic-support": {
+    "versao": "v1-e770603",
+    "hash": "e77060345a6d58a70555bda689cfa3ccaf5b8125a96edd4270271f2f8d9c20e0",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-e770603",
+        "hash": "e77060345a6d58a70555bda689cfa3ccaf5b8125a96edd4270271f2f8d9c20e0",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "lymphatic-support/a": {
+    "versao": "v1-b76f26d",
+    "hash": "b76f26d1bea9af410803b15ae5edc97a54c6c25481e28acaf61487ce5548f463",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-b76f26d",
+        "hash": "b76f26d1bea9af410803b15ae5edc97a54c6c25481e28acaf61487ce5548f463",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "lymphatic-support/adv": {
+    "versao": "v1-698dca1",
+    "hash": "698dca16afe753521d036f6967814fcfcda7184220e8f16d24fde23d44aa717d",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-698dca1",
+        "hash": "698dca16afe753521d036f6967814fcfcda7184220e8f16d24fde23d44aa717d",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "lymphatic-support/b": {
+    "versao": "v1-cbbbf5f",
+    "hash": "cbbbf5f59beda3c1f7fa38d3064221ae1d53accf295f563a364e887f17779668",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-cbbbf5f",
+        "hash": "cbbbf5f59beda3c1f7fa38d3064221ae1d53accf295f563a364e887f17779668",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "lymphatic-support/story": {
+    "versao": "v1-e53bbb5",
+    "hash": "e53bbb5f67c083bced349822b4af7ba40f9b2f0aab20d67feac5e518d20472f9",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-e53bbb5",
+        "hash": "e53bbb5f67c083bced349822b4af7ba40f9b2f0aab20d67feac5e518d20472f9",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "puffy-face": {
+    "versao": "v1-71b0296",
+    "hash": "71b02961c1bd7e711c8fcfb3519822f15555f6bb62ddcd42fbbfd7fe5dad2c75",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-71b0296",
+        "hash": "71b02961c1bd7e711c8fcfb3519822f15555f6bb62ddcd42fbbfd7fe5dad2c75",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "puffy-face/a": {
+    "versao": "v1-2ab5cf4",
+    "hash": "2ab5cf4b3dd6a0298b0b36423c5ac20e8b49cb8bfed236c3164806b3d5c1ea42",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-2ab5cf4",
+        "hash": "2ab5cf4b3dd6a0298b0b36423c5ac20e8b49cb8bfed236c3164806b3d5c1ea42",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "puffy-face/adv": {
+    "versao": "v1-5eff696",
+    "hash": "5eff6969a57f0f7d843db900a992c4f25185c51ce9089486b51669479bc841b4",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-5eff696",
+        "hash": "5eff6969a57f0f7d843db900a992c4f25185c51ce9089486b51669479bc841b4",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "puffy-face/b": {
+    "versao": "v1-bf24b09",
+    "hash": "bf24b09729cd935c25ea9d2953638e06104339e457d56ad05c5e7113b1c998c6",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-bf24b09",
+        "hash": "bf24b09729cd935c25ea9d2953638e06104339e457d56ad05c5e7113b1c998c6",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "puffy-face/story": {
+    "versao": "v1-13c5b95",
+    "hash": "13c5b95cafb5048dd91aeedde784ee50d97363c736195663bf4cad643f7f5c0c",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-13c5b95",
+        "hash": "13c5b95cafb5048dd91aeedde784ee50d97363c736195663bf4cad643f7f5c0c",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "water-retention": {
+    "versao": "v1-322bee3",
+    "hash": "322bee35f4b297d82cb5eadeef665f057865bddc6d0b2a0fd1076757e14ec786",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-322bee3",
+        "hash": "322bee35f4b297d82cb5eadeef665f057865bddc6d0b2a0fd1076757e14ec786",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "water-retention/a": {
+    "versao": "v1-338055e",
+    "hash": "338055e9116f6b84475b02836eca5843d76bde1b7f34b11541478af7a430b1bc",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-338055e",
+        "hash": "338055e9116f6b84475b02836eca5843d76bde1b7f34b11541478af7a430b1bc",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "water-retention/adv": {
+    "versao": "v1-fadcdff",
+    "hash": "fadcdff3926e55df236fec618ebb36c0e58163d599f217694a534cb259a48cf3",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-fadcdff",
+        "hash": "fadcdff3926e55df236fec618ebb36c0e58163d599f217694a534cb259a48cf3",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "water-retention/b": {
+    "versao": "v1-8d5d09f",
+    "hash": "8d5d09f2300d89f0c9be3333ba1585634cdbaf0957c35dca4dd6601f9c491dfb",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-8d5d09f",
+        "hash": "8d5d09f2300d89f0c9be3333ba1585634cdbaf0957c35dca4dd6601f9c491dfb",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  },
+  "water-retention/story": {
+    "versao": "v1-be08513",
+    "hash": "be08513d13b4766971f13c9fe39cab6e802e604b01532d2589afc2ef8d48b62b",
+    "atualizado_em": "2026-08-27T22:30:45.992Z",
+    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "historico": [
+      {
+        "versao": "v1-be08513",
+        "hash": "be08513d13b4766971f13c9fe39cab6e802e604b01532d2589afc2ef8d48b62b",
+        "em": "2026-08-27T22:30:45.992Z",
+        "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+        "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      }
+    ]
+  }
+}

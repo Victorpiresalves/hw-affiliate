@@ -1,0 +1,46 @@
+#!/bin/sh
+# pre-commit: carimbo de versão das páginas (ver LEIA-ME.md, "Carimbo de versão das páginas").
+# Ativar UMA vez por clone:   git config core.hooksPath .githooks
+# Roda `node carimbar.mjs`, faz `git add` do que ele carimbou + paginas.json, e imprime o que fez.
+set -e
+
+raiz="$(git rev-parse --show-toplevel)"
+cd "$raiz"
+
+if ! command -v node >/dev/null 2>&1; then
+  echo "pre-commit: 'node' não está no PATH — o carimbo de versão NÃO rodou; commit abortado." >&2
+  echo "            Instale o Node 22. (--no-verify pula o hook, mas a página sai sem versão.)" >&2
+  exit 1
+fi
+
+# O que já estava no stage ANTES do carimbo — para avisar o que o hook puxou para o commit.
+stage_antes="$(git diff --cached --name-only)"
+
+if ! saida="$(node carimbar.mjs)"; then
+  echo "pre-commit: carimbar.mjs falhou — commit abortado." >&2
+  printf '%s\n' "$saida" >&2
+  exit 1
+fi
+
+# Colunas separadas por TAB: slug, versão, status, arquivo. "inalterada" = nada a adicionar.
+carimbados="$(printf '%s\n' "$saida" | awk -F'\t' '$3 != "inalterada" && $4 != "" { print $4 }')"
+
+if [ -z "$carimbados" ]; then
+  echo "pre-commit: carimbo de versão — nenhuma página mudou."
+  exit 0
+fi
+
+echo "pre-commit: carimbo de versão aplicado:"
+printf '%s\n' "$saida" | awk -F'\t' '$3 != "inalterada" { printf "  %-42s %-16s %s\n", $1, $2, $3 }'
+
+printf '%s\n' "$carimbados" | while IFS= read -r arquivo; do
+  [ -n "$arquivo" ] || continue
+  git add -- "$arquivo"
+  if ! printf '%s\n' "$stage_antes" | grep -qx -- "$arquivo"; then
+    echo "  atenção: $arquivo não estava no stage e entrou neste commit por causa do carimbo" >&2
+    echo "           (se não era para entrar: git restore --staged -- $arquivo, e commit de novo)" >&2
+  fi
+done
+
+git add -- paginas.json
+echo "  + paginas.json"
