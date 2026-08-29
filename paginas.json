@@ -90,10 +90,10 @@
     ]
   },
   "adv5-irma": {
-    "versao": "v1-7ef3bb5",
-    "hash": "7ef3bb57b2b58dac2436a02e4735704e8643df89183d4d7a0dc4ebd173ae9206",
-    "atualizado_em": "2026-08-27T22:30:45.992Z",
-    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "versao": "v2-b87d469",
+    "hash": "b87d469cf1cca30aedf68ca7ef411d18dcb6c138073a1f2b96aa6236413c4dd6",
+    "atualizado_em": "2026-08-29T02:54:26.247Z",
+    "commit": "14259cf1d269ec403c3b2a06bb5ab8dcb4e69423",
     "historico": [
       {
         "versao": "v1-7ef3bb5",
@@ -101,6 +101,13 @@
         "em": "2026-08-27T22:30:45.992Z",
         "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
         "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      },
+      {
+        "versao": "v2-b87d469",
+        "hash": "b87d469cf1cca30aedf68ca7ef411d18dcb6c138073a1f2b96aa6236413c4dd6",
+        "em": "2026-08-29T02:54:26.247Z",
+        "commit": "14259cf1d269ec403c3b2a06bb5ab8dcb4e69423",
+        "nota": "hero antes/depois refeita: mesma perna nos dois paineis, versao mobile empilhada e par de rosto na dobra de rosto/maos"
       }
     ]
   },
@@ -255,10 +262,10 @@
     ]
   },
   "hw-linfaflow-dtc-advertorial-3-doctor": {
-    "versao": "v3-d5cf36e",
-    "hash": "d5cf36e0954ddb468ca1ca7d86d7589dd1054474c8b03665eee96e51e6468127",
-    "atualizado_em": "2026-08-28T22:42:27.076Z",
-    "commit": "a6d1aeafb2ca47743006a83e0647dfc43afc4cc2",
+    "versao": "v4-cf955b2",
+    "hash": "cf955b2e34dfed3f34a32a7ffc27197d5a30f562723f97526982747d9608d1f2",
+    "atualizado_em": "2026-08-29T02:54:26.247Z",
+    "commit": "14259cf1d269ec403c3b2a06bb5ab8dcb4e69423",
     "historico": [
       {
         "versao": "v1-397c147",
@@ -280,6 +287,13 @@
         "em": "2026-08-28T22:42:27.076Z",
         "commit": "a6d1aeafb2ca47743006a83e0647dfc43afc4cc2",
         "nota": "variante_vista + dobra de tornozelos: a pagina passa a se identificar e a keyword campea passa a emitir dobra"
+      },
+      {
+        "versao": "v4-cf955b2",
+        "hash": "cf955b2e34dfed3f34a32a7ffc27197d5a30f562723f97526982747d9608d1f2",
+        "em": "2026-08-29T02:54:26.247Z",
+        "commit": "14259cf1d269ec403c3b2a06bb5ab8dcb4e69423",
+        "nota": "hero antes/depois refeita: mesma perna nos dois paineis, versao mobile empilhada e par de rosto na dobra de rosto/maos"
       }
     ]
   },

@@ -3,7 +3,7 @@
 
 <head>
 <meta name="pdc-page" content="hw-linfaflow-dtc-advertorial-3-doctor">
-<meta name="pdc-version" content="v3-d5cf36e">
+<meta name="pdc-version" content="v4-cf955b2">
   <script
     data-no-optimize="1">var litespeed_docref = sessionStorage.getItem("litespeed_docref"); litespeed_docref && (Object.defineProperty(document, "referrer", { get: function () { return litespeed_docref } }), sessionStorage.removeItem("litespeed_docref"));</script>
   <meta charset="UTF-8">
@@ -23507,9 +23507,14 @@
                           </div>
                         </div>
                         <figure class="fig">
-                          <img src="./assets/hero-doctor-ba.jpg" decoding="async"
-                            data-src="./assets/hero-doctor-ba.jpg" alt="A doctor holding a small amber bottle, beside a swollen ankle labeled Week 1 and the same ankle at Week 8"
-                            width="1000" height="593" />
+                          <picture>
+                <!-- No celular a faixa de 3 paineis da 118px por painel e nada se le: a versao _mob
+                     poe o par WEEK 1 / WEEK 8 na largura inteira (177px cada) e o medico numa faixa. -->
+                <source media="(max-width:640px)" type="image/webp" srcset="./assets/hero-ba-pes-mob.webp">
+                <source media="(max-width:640px)" srcset="./assets/hero-ba-pes-mob.jpg">
+                <source type="image/webp" srcset="./assets/hero-ba-pes.webp">
+                <img src="./assets/hero-ba-pes.jpg" decoding="async" alt="Dr. Alan Reeve holding the four-plant tincture, beside the same swollen ankle photographed at week 1 and at week 8" width="1440" height="854" />
+              </picture>
                         </figure>
                         <div class="pullquote">
                           <div class="pq-body">
