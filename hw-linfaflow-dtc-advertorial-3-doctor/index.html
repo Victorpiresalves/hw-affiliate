@@ -3,7 +3,7 @@
 
 <head>
 <meta name="pdc-page" content="hw-linfaflow-dtc-advertorial-3-doctor">
-<meta name="pdc-version" content="v4-cf955b2">
+<meta name="pdc-version" content="v5-46fe0cf">
   <script
     data-no-optimize="1">var litespeed_docref = sessionStorage.getItem("litespeed_docref"); litespeed_docref && (Object.defineProperty(document, "referrer", { get: function () { return litespeed_docref } }), sessionStorage.removeItem("litespeed_docref"));</script>
   <meta charset="UTF-8">
@@ -23458,37 +23458,73 @@
                           try {
                             var kw = (new URLSearchParams(location.search).get("keyword") || "").toLowerCase();
                             if (!kw) return;
+                            /* ORDEM = PRIORIDADE: a primeira que casa vence, entao o especifico
+                               vem antes do generico. Duas keywords REAIS estavam caindo na dobra
+                               errada porque /treat|remedy/ vinha cedo demais:
+                                 "puffy eyes and face remedy" -> tratamento (manchete sobre PES)
+                                 "water retention remedy"     -> tratamento (manchete sobre PES)
+                               Por isso rosto e retencao agora vem ANTES de tratamento.
+                               O 5o campo e a FAMILIA DA FOTO: a hero do rosto so serve a busca de rosto. */
                             var D = [
                               ["marca", /linfa/,
                                "Linfaflow: What a Harvard-Trained Vascular Doctor Says Is Actually Going On in Your Ankles &mdash; and the One Question He Wants You to Answer Before You Buy Anything.",
-                               "Skip the ads. He spent twenty-three years pressing ankles and writing &ldquo;edema &mdash; monitor.&rdquo; Then it happened to his own sister. Here is what he says now, and the 60-second test he asks people to do first."],
+                               "Skip the ads. He spent twenty-three years pressing ankles and writing &ldquo;edema &mdash; monitor.&rdquo; Then it happened to his own sister. Here is what he says now, and the 60-second test he asks people to do first.",
+                               "pes"],
+                              /* ANTES de tratamento e de puffy: "puffy eyes and face remedy" casaria
+                                 os dois e receberia manchete sobre pes. E a unica dobra com foto propria. */
+                              ["rosto", /face|facial|eyelid|cheek|\beyes?\b/,
+                               "Puffy Face and Eyes in the Morning? A Harvard-Trained Doctor Says the Drain Behind It Is the Same One He Missed in His Own Sister.",
+                               "It is not sleep, not salt, and not your age. The lymph that clears your face leaves through the same route as your legs &mdash; and it is the one system nobody checks. Here is the 60-second test he asks people to do first.",
+                               "rosto"],
+                              ["retencao", /retention|fluid|water/,
+                               "Fluid Retention in Your Ankles Is Not Always a Vein Problem &mdash; and the Water Pill Squeezes the Wrong Organ. A Harvard-Trained Doctor Only Admitted It After His Sister Lost a Leg.",
+                               "It pulls water out of your blood through your kidneys and leaves the fluid in your tissue exactly where it was. He wrote that prescription for six years for the one person he should have looked at twice.",
+                               "pes"],
+                              /* Grupo Suplemento: hoje com ZERO sessao, mas a dobra existe para o dia
+                                 em que ele rodar -- sem ela a busca por formula cai no balde de tornozelo.
+                                 Vem depois de marca de proposito: "linfaflow drops" e busca de MARCA. */
+                              ["suplemento", /supplement|capsule|tincture|herbal|lymphatic support|drops/,
+                               "Before You Buy Another Lymphatic Supplement: A Harvard-Trained Doctor Explains What Actually Has to Move &mdash; and Why Most Formulas Squeeze Instead of Drain.",
+                               "Twenty-three years of pressing ankles and writing &ldquo;edema &mdash; monitor.&rdquo; Then it happened to his own sister. Here is what he reads on a label now, and the 60-second test he asks people to do before they order anything.",
+                               "pes"],
                               ["tratamento", /treat|remedy/,
                                "Before You Treat Swollen Feet Again: A Harvard-Trained Doctor Explains Why Everything You Have Tried Squeezes the Water Instead of Clearing It &mdash; and What It Cost His Own Sister.",
-                               "Compression squeezes. Water pills squeeze. Feet up squeezes. None of them touch the drain. He prescribed the squeeze for nineteen years, and spent eleven of them not speaking to the woman it happened to."],
-                              ["retencao", /retention|fluid/,
-                               "Fluid Retention in Your Ankles Is Not Always a Vein Problem &mdash; and the Water Pill Squeezes the Wrong Organ. A Harvard-Trained Doctor Only Admitted It After His Sister Lost a Leg.",
-                               "It pulls water out of your blood through your kidneys and leaves the fluid in your tissue exactly where it was. He wrote that prescription for six years for the one person he should have looked at twice."],
+                               "Compression squeezes. Water pills squeeze. Feet up squeezes. None of them touch the drain. He prescribed the squeeze for nineteen years, and spent eleven of them not speaking to the woman it happened to.",
+                               "pes"],
                               ["puffy", /puffy/,
                                "Puffy Feet by 5 PM? It Is Not the Salt, Not Your Age, and Not Always the Veins &mdash; A Harvard-Trained Doctor Names the Drain Nobody Chases, After Eleven Years of Silence With His Own Sister.",
-                               "Shoes that pinch by noon. Socks that leave trenches. Ankles that disappear by evening. One drain &mdash; and a thumb test that has been telling your doctor the answer at every single visit."],
+                               "Shoes that pinch by noon. Socks that leave trenches. Ankles that disappear by evening. One drain &mdash; and a thumb test that has been telling your doctor the answer at every single visit.",
+                               "pes"],
                               /* ULTIMA de proposito: e o balde do resto do universo de tornozelo/pe,
-                                 incluindo "foot and ankle swelling" -- a keyword que mais vende (4 das 9
-                                 vendas ate 27/08) e que ate aqui nao emitia dobra nenhuma. H1 e subtitulo
-                                 NULOS: o padrao da pagina ja fala com essa busca, entao aqui so se MEDE. */
-                              ["tornozelos", /ankle|foot|feet|swell/, null, null]
+                                 incluindo "foot and ankle swelling" -- a keyword que mais vende.
+                                 H1 e subtitulo NULOS: o padrao da pagina ja fala com essa busca. */
+                              ["tornozelos", /ankle|foot|feet|swell|leg/, null, null, "pes"]
                             ];
                             for (var i = 0; i < D.length; i++) {
                               if (D[i][1].test(kw)) {
                                 var h1 = document.getElementById("pdcH1"), sb = document.getElementById("pdcSub");
                                 if (h1 && D[i][2]) h1.innerHTML = D[i][2];
                                 if (sb && D[i][3]) sb.innerHTML = D[i][3];
+                                /* A hero e um <picture>: trocar so o src do <img> NAO muda o que o
+                                   celular recebe -- os <source> ganham do <img>. Por isso os quatro. */
+                                var fam = D[i][4] || "pes";
+                                if (fam !== "pes") {
+                                  var im = document.getElementById("pdcHero");
+                                  if (im) {
+                                    im.src = "./assets/hero-ba-" + fam + ".jpg";
+                                    im.alt = "Dr. Alan Reeve holding the four-plant tincture, beside the same puffy face photographed at week 1 and at week 8";
+                                  }
+                                  var s1 = document.getElementById("pdcHeroMobW"); if (s1) s1.srcset = "./assets/hero-ba-" + fam + "-mob.webp";
+                                  var s2 = document.getElementById("pdcHeroMobJ"); if (s2) s2.srcset = "./assets/hero-ba-" + fam + "-mob.jpg";
+                                  var s3 = document.getElementById("pdcHeroW");    if (s3) s3.srcset = "./assets/hero-ba-" + fam + ".webp";
+                                }
                                 /* qual dobra a pessoa viu -- sem isso nao da para saber qual converteu.
                                    O tracking.js e async, entao espera ele aparecer em vez de perder o evento. */
-                                var nome = D[i][0], t = 0;
+                                var nome = D[i][0], familia = D[i][4] || "pes", t = 0;
                                 var esperar = setInterval(function () {
                                   if (window.pdcTrack) {
                                     clearInterval(esperar);
-                                    try { window.pdcTrack("dobra_congruente", { payload: { dobra: nome, keyword: kw }, platforms: [] }) } catch (e) {}
+                                    try { window.pdcTrack("dobra_congruente", { payload: { dobra: nome, keyword: kw, hero: familia }, platforms: [] }) } catch (e) {}
                                   } else if (++t > 20) clearInterval(esperar);
                                 }, 500);
                                 break;
@@ -23510,10 +23546,10 @@
                           <picture>
                 <!-- No celular a faixa de 3 paineis da 118px por painel e nada se le: a versao _mob
                      poe o par WEEK 1 / WEEK 8 na largura inteira (177px cada) e o medico numa faixa. -->
-                <source media="(max-width:640px)" type="image/webp" srcset="./assets/hero-ba-pes-mob.webp">
-                <source media="(max-width:640px)" srcset="./assets/hero-ba-pes-mob.jpg">
-                <source type="image/webp" srcset="./assets/hero-ba-pes.webp">
-                <img src="./assets/hero-ba-pes.jpg" decoding="async" alt="Dr. Alan Reeve holding the four-plant tincture, beside the same swollen ankle photographed at week 1 and at week 8" width="1440" height="854" />
+                <source id="pdcHeroMobW" media="(max-width:640px)" type="image/webp" srcset="./assets/hero-ba-pes-mob.webp">
+                <source id="pdcHeroMobJ" media="(max-width:640px)" srcset="./assets/hero-ba-pes-mob.jpg">
+                <source id="pdcHeroW" type="image/webp" srcset="./assets/hero-ba-pes.webp">
+                <img id="pdcHero" src="./assets/hero-ba-pes.jpg" decoding="async" alt="Dr. Alan Reeve holding the four-plant tincture, beside the same swollen ankle photographed at week 1 and at week 8" width="1440" height="854" />
               </picture>
                         </figure>
                         <div class="pullquote">

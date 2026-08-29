@@ -262,10 +262,10 @@
     ]
   },
   "hw-linfaflow-dtc-advertorial-3-doctor": {
-    "versao": "v4-cf955b2",
-    "hash": "cf955b2e34dfed3f34a32a7ffc27197d5a30f562723f97526982747d9608d1f2",
-    "atualizado_em": "2026-08-29T02:54:26.247Z",
-    "commit": "14259cf1d269ec403c3b2a06bb5ab8dcb4e69423",
+    "versao": "v5-46fe0cf",
+    "hash": "46fe0cf837ad2e6d871b1d0d52110fcf4a1b200ac90eaf8f79a285590076b780",
+    "atualizado_em": "2026-08-29T04:28:27.082Z",
+    "commit": "33ca077eb08deadf89a5c15d10b20710f306402c",
     "historico": [
       {
         "versao": "v1-397c147",
@@ -294,6 +294,13 @@
         "em": "2026-08-29T02:54:26.247Z",
         "commit": "14259cf1d269ec403c3b2a06bb5ab8dcb4e69423",
         "nota": "hero antes/depois refeita: mesma perna nos dois paineis, versao mobile empilhada e par de rosto na dobra de rosto/maos"
+      },
+      {
+        "versao": "v5-46fe0cf",
+        "hash": "46fe0cf837ad2e6d871b1d0d52110fcf4a1b200ac90eaf8f79a285590076b780",
+        "em": "2026-08-29T04:28:27.082Z",
+        "commit": "33ca077eb08deadf89a5c15d10b20710f306402c",
+        "nota": "dobras 5->7: rosto e suplemento; ordem corrigida; hero troca por familia"
       }
     ]
   },
