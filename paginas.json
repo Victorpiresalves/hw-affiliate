@@ -262,10 +262,10 @@
     ]
   },
   "hw-linfaflow-dtc-advertorial-3-doctor": {
-    "versao": "v5-46fe0cf",
-    "hash": "46fe0cf837ad2e6d871b1d0d52110fcf4a1b200ac90eaf8f79a285590076b780",
-    "atualizado_em": "2026-08-29T04:28:27.082Z",
-    "commit": "33ca077eb08deadf89a5c15d10b20710f306402c",
+    "versao": "v6-308920a",
+    "hash": "308920a40fad7f690ca1255fc66afeca1aaf3b5c1994626b9d649babd2e4db1a",
+    "atualizado_em": "2026-08-29T04:31:02.259Z",
+    "commit": "ea17bb0c204f7e099d76ac8853a2297ccc9a463e",
     "historico": [
       {
         "versao": "v1-397c147",
@@ -301,6 +301,13 @@
         "em": "2026-08-29T04:28:27.082Z",
         "commit": "33ca077eb08deadf89a5c15d10b20710f306402c",
         "nota": "dobras 5->7: rosto e suplemento; ordem corrigida; hero troca por familia"
+      },
+      {
+        "versao": "v6-308920a",
+        "hash": "308920a40fad7f690ca1255fc66afeca1aaf3b5c1994626b9d649babd2e4db1a",
+        "em": "2026-08-29T04:31:02.259Z",
+        "commit": "ea17bb0c204f7e099d76ac8853a2297ccc9a463e",
+        "nota": "conserta a troca da hero: o script roda antes da <picture> existir"
       }
     ]
   },

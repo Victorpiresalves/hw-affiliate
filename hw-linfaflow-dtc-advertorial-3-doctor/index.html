@@ -3,7 +3,7 @@
 
 <head>
 <meta name="pdc-page" content="hw-linfaflow-dtc-advertorial-3-doctor">
-<meta name="pdc-version" content="v5-46fe0cf">
+<meta name="pdc-version" content="v6-308920a">
   <script
     data-no-optimize="1">var litespeed_docref = sessionStorage.getItem("litespeed_docref"); litespeed_docref && (Object.defineProperty(document, "referrer", { get: function () { return litespeed_docref } }), sessionStorage.removeItem("litespeed_docref"));</script>
   <meta charset="UTF-8">
@@ -23509,14 +23509,31 @@
                                    celular recebe -- os <source> ganham do <img>. Por isso os quatro. */
                                 var fam = D[i][4] || "pes";
                                 if (fam !== "pes") {
-                                  var im = document.getElementById("pdcHero");
-                                  if (im) {
+                                  /* ESTE SCRIPT RODA ANTES DA <picture> EXISTIR NO DOM (ele esta acima
+                                     dela no HTML), entao getElementById devolveria null e a foto nunca
+                                     trocaria -- medido no ar na v5. Por isso a troca espera o documento. */
+                                  var trocarHero = function () {
+                                    var im = document.getElementById("pdcHero");
+                                    if (!im) return false;
+                                    /* O <picture> escolhe pelo <source>: mexer so no src do <img> nao muda
+                                       o que o celular recebe. Os tres source vao junto, e o srcset do
+                                       proprio <img> tambem, senao ele ganha do src em tela retina. */
+                                    var s1 = document.getElementById("pdcHeroMobW"); if (s1) s1.srcset = "./assets/hero-ba-" + fam + "-mob.webp";
+                                    var s2 = document.getElementById("pdcHeroMobJ"); if (s2) s2.srcset = "./assets/hero-ba-" + fam + "-mob.jpg";
+                                    var s3 = document.getElementById("pdcHeroW");    if (s3) s3.srcset = "./assets/hero-ba-" + fam + ".webp";
                                     im.src = "./assets/hero-ba-" + fam + ".jpg";
                                     im.alt = "Dr. Alan Reeve holding the four-plant tincture, beside the same puffy face photographed at week 1 and at week 8";
+                                    return true;
+                                  };
+                                  if (!trocarHero()) {
+                                    if (document.readyState === "loading") {
+                                      document.addEventListener("DOMContentLoaded", trocarHero);
+                                    } else {
+                                      var tentar = 0, laco = setInterval(function () {
+                                        if (trocarHero() || ++tentar > 40) clearInterval(laco);
+                                      }, 50);
+                                    }
                                   }
-                                  var s1 = document.getElementById("pdcHeroMobW"); if (s1) s1.srcset = "./assets/hero-ba-" + fam + "-mob.webp";
-                                  var s2 = document.getElementById("pdcHeroMobJ"); if (s2) s2.srcset = "./assets/hero-ba-" + fam + "-mob.jpg";
-                                  var s3 = document.getElementById("pdcHeroW");    if (s3) s3.srcset = "./assets/hero-ba-" + fam + ".webp";
                                 }
                                 /* qual dobra a pessoa viu -- sem isso nao da para saber qual converteu.
                                    O tracking.js e async, entao espera ele aparecer em vez de perder o evento. */
