@@ -90,10 +90,10 @@
     ]
   },
   "adv5-irma": {
-    "versao": "v2-b87d469",
-    "hash": "b87d469cf1cca30aedf68ca7ef411d18dcb6c138073a1f2b96aa6236413c4dd6",
-    "atualizado_em": "2026-08-29T02:54:26.247Z",
-    "commit": "14259cf1d269ec403c3b2a06bb5ab8dcb4e69423",
+    "versao": "v3-0121fd8",
+    "hash": "0121fd8b29dd6cc94acd8bc53210f604e3f1d71406d8a7b8ed3e91be1532dd89",
+    "atualizado_em": "2026-08-31T04:49:46.262Z",
+    "commit": "01b5111c75ab0dd49cfe70f62e248444f81a360a",
     "historico": [
       {
         "versao": "v1-7ef3bb5",
@@ -108,6 +108,13 @@
         "em": "2026-08-29T02:54:26.247Z",
         "commit": "14259cf1d269ec403c3b2a06bb5ab8dcb4e69423",
         "nota": "hero antes/depois refeita: mesma perna nos dois paineis, versao mobile empilhada e par de rosto na dobra de rosto/maos"
+      },
+      {
+        "versao": "v3-0121fd8",
+        "hash": "0121fd8b29dd6cc94acd8bc53210f604e3f1d71406d8a7b8ed3e91be1532dd89",
+        "em": "2026-08-31T04:49:46.262Z",
+        "commit": "01b5111c75ab0dd49cfe70f62e248444f81a360a",
+        "nota": null
       }
     ]
   },
@@ -262,10 +269,10 @@
     ]
   },
   "hw-linfaflow-dtc-advertorial-3-doctor": {
-    "versao": "v6-308920a",
-    "hash": "308920a40fad7f690ca1255fc66afeca1aaf3b5c1994626b9d649babd2e4db1a",
-    "atualizado_em": "2026-08-29T04:31:02.259Z",
-    "commit": "ea17bb0c204f7e099d76ac8853a2297ccc9a463e",
+    "versao": "v7-6bc5c39",
+    "hash": "6bc5c39226f413e24667ed3414a2fa6284e9748c1230efe8a218fa3da7c8279b",
+    "atualizado_em": "2026-08-31T04:49:46.262Z",
+    "commit": "01b5111c75ab0dd49cfe70f62e248444f81a360a",
     "historico": [
       {
         "versao": "v1-397c147",
@@ -308,6 +315,13 @@
         "em": "2026-08-29T04:31:02.259Z",
         "commit": "ea17bb0c204f7e099d76ac8853a2297ccc9a463e",
         "nota": "conserta a troca da hero: o script roda antes da <picture> existir"
+      },
+      {
+        "versao": "v7-6bc5c39",
+        "hash": "6bc5c39226f413e24667ed3414a2fa6284e9748c1230efe8a218fa3da7c8279b",
+        "em": "2026-08-31T04:49:46.262Z",
+        "commit": "01b5111c75ab0dd49cfe70f62e248444f81a360a",
+        "nota": null
       }
     ]
   },

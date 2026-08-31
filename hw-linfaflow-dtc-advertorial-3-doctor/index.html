@@ -3,7 +3,7 @@
 
 <head>
 <meta name="pdc-page" content="hw-linfaflow-dtc-advertorial-3-doctor">
-<meta name="pdc-version" content="v6-308920a">
+<meta name="pdc-version" content="v7-6bc5c39">
   <script
     data-no-optimize="1">var litespeed_docref = sessionStorage.getItem("litespeed_docref"); litespeed_docref && (Object.defineProperty(document, "referrer", { get: function () { return litespeed_docref } }), sessionStorage.removeItem("litespeed_docref"));</script>
   <meta charset="UTF-8">
@@ -23506,7 +23506,7 @@
                                 if (h1 && D[i][2]) h1.innerHTML = D[i][2];
                                 if (sb && D[i][3]) sb.innerHTML = D[i][3];
                                 /* A hero e um <picture>: trocar so o src do <img> NAO muda o que o
-                                   celular recebe -- os <source> ganham do <img>. Por isso os quatro. */
+                                   navegador escolhe -- o <source> ganha do <img>. Por isso os dois. */
                                 var fam = D[i][4] || "pes";
                                 if (fam !== "pes") {
                                   /* ESTE SCRIPT RODA ANTES DA <picture> EXISTIR NO DOM (ele esta acima
@@ -23516,10 +23516,8 @@
                                     var im = document.getElementById("pdcHero");
                                     if (!im) return false;
                                     /* O <picture> escolhe pelo <source>: mexer so no src do <img> nao muda
-                                       o que o celular recebe. Os tres source vao junto, e o srcset do
-                                       proprio <img> tambem, senao ele ganha do src em tela retina. */
-                                    var s1 = document.getElementById("pdcHeroMobW"); if (s1) s1.srcset = "./assets/hero-ba-" + fam + "-mob.webp";
-                                    var s2 = document.getElementById("pdcHeroMobJ"); if (s2) s2.srcset = "./assets/hero-ba-" + fam + "-mob.jpg";
+                                       o que o celular recebe. Hoje so existe o source de
+                                       desktop (o do celular foi removido em 31/08/2026), entao vao ele e o <img>. */
                                     var s3 = document.getElementById("pdcHeroW");    if (s3) s3.srcset = "./assets/hero-ba-" + fam + ".webp";
                                     im.src = "./assets/hero-ba-" + fam + ".jpg";
                                     im.alt = "Dr. Alan Reeve holding the four-plant tincture, beside the same puffy face photographed at week 1 and at week 8";
@@ -23561,10 +23559,10 @@
                         </div>
                         <figure class="fig">
                           <picture>
-                <!-- No celular a faixa de 3 paineis da 118px por painel e nada se le: a versao _mob
-                     poe o par WEEK 1 / WEEK 8 na largura inteira (177px cada) e o medico numa faixa. -->
-                <source id="pdcHeroMobW" media="(max-width:640px)" type="image/webp" srcset="./assets/hero-ba-pes-mob.webp">
-                <source id="pdcHeroMobJ" media="(max-width:640px)" srcset="./assets/hero-ba-pes-mob.jpg">
+                <!-- Sem <source> de celular de proposito: o dono comparou as duas e preferiu a
+                     hero do desktop (1440x854) tambem no telefone (31/08/2026). Os arquivos
+                     assets/hero-ba-*-mob.* continuam no repo; para voltar atras, basta recriar
+                     os dois <source media="(max-width:640px)" srcset="...-mob.webp|.jpg">. -->
                 <source id="pdcHeroW" type="image/webp" srcset="./assets/hero-ba-pes.webp">
                 <img id="pdcHero" src="./assets/hero-ba-pes.jpg" decoding="async" alt="Dr. Alan Reeve holding the four-plant tincture, beside the same swollen ankle photographed at week 1 and at week 8" width="1440" height="854" />
               </picture>
