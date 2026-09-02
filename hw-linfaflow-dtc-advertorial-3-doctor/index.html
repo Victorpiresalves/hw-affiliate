@@ -3,7 +3,7 @@
 
 <head>
 <meta name="pdc-page" content="hw-linfaflow-dtc-advertorial-3-doctor">
-<meta name="pdc-version" content="v7-6bc5c39">
+<meta name="pdc-version" content="v9-af18eee">
   <script
     data-no-optimize="1">var litespeed_docref = sessionStorage.getItem("litespeed_docref"); litespeed_docref && (Object.defineProperty(document, "referrer", { get: function () { return litespeed_docref } }), sessionStorage.removeItem("litespeed_docref"));</script>
   <meta charset="UTF-8">
@@ -20233,6 +20233,11 @@
                     :root {
                       --cnn-red: #cc0000;
                       --cnn-red-dark: #a30000;
+                      /* Acao (02/09/2026). O vermelho da marca e o mesmo do logo UNN e do selo
+                         BREAKING NEWS -- o botao se confundia com mobilia da pagina. Verde separa
+                         acao de alarme e casa com o pop-up de saida e o checkout, ja verdes. */
+                      --cta: #1a7f4e;
+                      --cta-dark: #14663e;
                       --ink: #0c0c0c;
                       --ink-soft: #262626;
                       --ink-mid: #404040;
@@ -21301,7 +21306,7 @@
                       justify-content: center;
                       gap: 10px;
                       width: 100%;
-                      background: var(--cnn-red);
+                      background: var(--cta);
                       color: #fff;
                       text-decoration: none;
                       font-size: 17px;
@@ -21327,7 +21332,7 @@
                     }
 
                     .glance-cta:hover {
-                      background: var(--cnn-red-dark);
+                      background: var(--cta-dark);
                       color: #fff;
                     }
 
@@ -21337,6 +21342,167 @@
 
                     .glance-cta:active {
                       transform: translateY(1px);
+                    }
+
+                    /* ------------------------------------------------------------------
+                       DOBRA-CTA (02/09/2026). O Clarity media scroll medio de 43,6% e o
+                       primeiro CTA so aparecia aos 82% do conteudo: 9 em cada 10 visitantes
+                       nunca viam um botao. Este bloco sobe o teste do edema -- que estava
+                       enterrado na questao 4 do quiz -- para a dobra, onde ele vira o
+                       motivo de clicar em vez de ser mais uma pergunta.
+                       ------------------------------------------------------------------ */
+                    .dobra-cta {
+                      border: 1px solid var(--hair);
+                      border-top: 3px solid var(--cnn-red);
+                      background: #fafafa;
+                      padding: 20px 20px 18px;
+                      margin: 26px 0;
+                    }
+
+                    .dobra-cta .dc-lbl {
+                      display: block;
+                      font-family: var(--sans);
+                      font-size: 11px;
+                      font-weight: 800;
+                      letter-spacing: .12em;
+                      text-transform: uppercase;
+                      color: var(--cnn-red);
+                      margin-bottom: 9px;
+                    }
+
+                    .dobra-cta .dc-do {
+                      font-family: var(--serif-tight);
+                      font-size: 21px;
+                      line-height: 1.25;
+                      font-weight: 700;
+                      color: var(--ink);
+                      margin: 0 0 10px;
+                    }
+
+                    .dobra-cta p {
+                      font-family: var(--sans);
+                      font-size: 16px;
+                      line-height: 1.55;
+                      color: var(--ink-soft);
+                      margin: 0 0 12px;
+                    }
+
+                    .dobra-cta .dc-read {
+                      list-style: none;
+                      padding: 0;
+                      margin: 0 0 16px;
+                      border-top: 1px solid var(--hair-soft);
+                    }
+
+                    .dobra-cta .dc-read li {
+                      display: flex;
+                      gap: 12px;
+                      align-items: baseline;
+                      padding: 9px 0;
+                      border-bottom: 1px solid var(--hair-soft);
+                      font-family: var(--sans);
+                      font-size: 15px;
+                      line-height: 1.45;
+                      color: var(--ink-soft);
+                    }
+
+                    .dobra-cta .dc-t {
+                      flex: 0 0 84px;
+                      font-weight: 800;
+                      font-variant-numeric: tabular-nums;
+                      color: var(--ink);
+                    }
+
+                    .dobra-cta .dc-read li:last-child .dc-t {
+                      color: var(--cnn-red);
+                    }
+
+                    .dobra-cta .dc-micro {
+                      font-family: var(--sans);
+                      font-size: 13px;
+                      line-height: 1.45;
+                      color: var(--ink-faint);
+                      text-align: center;
+                      margin: 9px 0 0;
+                    }
+
+                    /* Barra fixa de celular: 63% do trafego e mobile, e a barra acompanha
+                       o leitor pelos 43% que ele de fato le. */
+                    .sticky-cta {
+                      position: fixed;
+                      left: 0;
+                      right: 0;
+                      bottom: 0;
+                      z-index: 900;
+                      display: none;
+                      align-items: center;
+                      gap: 12px;
+                      padding: 10px 12px calc(10px + env(safe-area-inset-bottom, 0px));
+                      background: rgba(255, 255, 255, .97);
+                      border-top: 1px solid var(--hair);
+                      box-shadow: 0 -4px 18px rgba(0, 0, 0, .10);
+                    }
+
+                    .sticky-cta .sc-txt {
+                      flex: 1 1 auto;
+                      min-width: 0;
+                      font-family: var(--sans);
+                      font-size: 13px;
+                      line-height: 1.3;
+                      color: var(--ink-soft);
+                    }
+
+                    .sticky-cta .sc-txt b {
+                      display: block;
+                      color: var(--ink);
+                    }
+
+                    .sticky-cta .sc-btn {
+                      flex: 0 0 auto;
+                      background: var(--cta);
+                      color: #fff;
+                      text-decoration: none;
+                      font-family: var(--sans);
+                      font-size: 14px;
+                      font-weight: 800;
+                      letter-spacing: .04em;
+                      text-transform: uppercase;
+                      padding: 13px 16px;
+                      white-space: nowrap;
+                    }
+
+                    .sticky-cta .sc-btn:link,
+                    .sticky-cta .sc-btn:visited,
+                    .sticky-cta .sc-btn:active,
+                    .sticky-cta .sc-btn:focus {
+                      color: #fff;
+                    }
+
+                    @media (max-width: 760px) {
+                      .sticky-cta {
+                        display: flex;
+                      }
+
+                      body.has-sticky-cta {
+                        padding-bottom: 76px;
+                      }
+
+                      .dobra-cta {
+                        padding: 17px 15px 15px;
+                      }
+
+                      .dobra-cta .dc-do {
+                        font-size: 19px;
+                      }
+
+                      .dobra-cta .dc-t {
+                        flex-basis: 76px;
+                      }
+                    }
+
+                    /* Nunca por cima do quiz: o modal e tela cheia. */
+                    body.quiz-aberto .sticky-cta {
+                      display: none;
                     }
 
                     @media (prefers-reduced-motion: reduce) {
@@ -21548,7 +21714,7 @@
                       display: inline-flex;
                       align-items: center;
                       justify-content: center;
-                      background: var(--cnn-red);
+                      background: var(--cta);
                       color: #fff;
                       font-weight: 700;
                       font-size: 15px;
@@ -21560,7 +21726,7 @@
                     }
 
                     .cta-btn:hover {
-                      background: var(--cnn-red-dark);
+                      background: var(--cta-dark);
                     }
 
                     .offer-fine {
@@ -23573,6 +23739,23 @@
                             <cite>&mdash; Dr. Alan Reeve, M.D.</cite>
                           </div>
                         </div>
+                        <!-- DOBRA-CTA (02/09/2026): primeiro ponto de acao da pagina, a ~12% do
+                             conteudo. Antes disto o primeiro botao so vinha aos 82%, acima do
+                             scroll medio de 43,6% medido no Clarity. -->
+                        <div class="dobra-cta">
+                          <span class="dc-lbl">Do this before you read another line</span>
+                          <p class="dc-do">Press your thumb into the bone on the inside of your ankle. Hold it for 5 seconds. Let go &mdash; and watch the dent.</p>
+                          <ul class="dc-read">
+                            <li><span class="dc-t">Springs back</span><span>The drain is keeping up. Nothing to chase today.</span></li>
+                            <li><span class="dc-t">2&ndash;3 sec</span><span>Fluid is clearing, but slower than it should.</span></li>
+                            <li><span class="dc-t">5 sec+</span><span>It has been sitting long enough to leave a mark.</span></li>
+                            <li><span class="dc-t">8 sec+</span><span>The tissue has stopped springing back on its own.</span></li>
+                          </ul>
+                          <a class="glance-cta"
+                            href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918">SEE
+                            WHAT YOUR DENT MEANS <span class="arw" aria-hidden="true">&rarr;</span></a>
+                          <p class="dc-micro">5 questions &middot; no email needed &middot; your result on the next screen</p>
+                        </div>
                         <p class="kicker" style="font-size:16px;">If you have any swelling at all in your legs, ankles, or feet&mdash;this will be the most life-saving message you&rsquo;ll ever read.</p>
                         <figure class="fig">
                           <img src="./assets/img-51ed34c264.webp" decoding="async"
@@ -23597,8 +23780,8 @@
                             </svg></a>
                         </div>
                         <div class="body">
-                          <p>Press your thumb into the bone of your ankle. Hold it for five seconds, then let go.</p>
-                          <p>If the dent is still there when you count to five, keep reading. If it is still there at eight, read this tonight, not tomorrow.</p>
+                          <p>Back to that dent for a second &mdash; and if you skipped it, press now: thumb into the ankle bone, five seconds, then let go.</p>
+                          <p>If it is still there when you count to five, keep reading. If it is still there at eight, read this tonight, not tomorrow.</p>
                           <p>That number is the whole story, and almost nobody in your doctor&rsquo;s office is paid to count it.</p>
                           <p>I learned it from a man who spent twenty-three years being paid to ignore it.</p>
                           <p><strong>Dr. Alan Reeve</strong> trained at Harvard Medical School and practiced vascular medicine in Ohio until he retired. He and I have known each other a long time. He is the reason this article exists &mdash; and he is not an easy man to get a story out of. He told me this one over two evenings, and asked me to write it down exactly as he said it, because he does not trust himself to tell it without softening it.</p>
@@ -23982,7 +24165,7 @@
                             </div>
                             <div class="glance-rule"></div>
                             <a class="glance-cta"
-                              href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918">TAKE THE 60-SECOND TEST <span class="arw" aria-hidden="true"><svg viewBox="0 0 24 24" width="20"
+                              href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918">SEE WHAT STAGE YOUR SWELLING IS IN <span class="arw" aria-hidden="true"><svg viewBox="0 0 24 24" width="20"
                                   height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="1.5"
                                     stroke-linecap="round" stroke-linejoin="round"></path>
@@ -23999,7 +24182,7 @@
                             it. This run closes <strong class="js-deadline"></strong>.</p>
                           <div class="cta-standalone">
                             <a class="glance-cta"
-                              href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918">TAKE THE 60-SECOND TEST <span class="arw" aria-hidden="true"><svg viewBox="0 0 24 24" width="20"
+                              href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918">SEE WHAT STAGE YOUR SWELLING IS IN <span class="arw" aria-hidden="true"><svg viewBox="0 0 24 24" width="20"
                                   height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="1.5"
                                     stroke-linecap="round" stroke-linejoin="round"></path>
@@ -24066,7 +24249,7 @@
                             </figure>
                             <div class="cta-standalone">
                               <a class="glance-cta"
-                                href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918">TAKE THE 60-SECOND TEST <span class="arw" aria-hidden="true"><svg viewBox="0 0 24 24" width="20"
+                                href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918">SEE WHAT STAGE YOUR SWELLING IS IN <span class="arw" aria-hidden="true"><svg viewBox="0 0 24 24" width="20"
                                     height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="1.5"
                                       stroke-linecap="round" stroke-linejoin="round"></path>
@@ -24630,11 +24813,20 @@
                   </style>
                   <div class="sticky-cta-bar" id="stickyCta" aria-hidden="true">
                     <a class="glance-cta sticky-cta"
-                      href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918">TAKE THE 60-SECOND TEST <span class="arw" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"
+                      href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918">SEE WHAT STAGE YOUR SWELLING IS IN <span class="arw" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"
                           fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="1.5"
                             stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg></span></a>
+                  </div>
+                  <!-- Barra fixa de celular (02/09/2026): 63% das sessoes sao mobile e o leitor
+                       medio para nos 43,6%. A barra acompanha ele por esse trecho em vez de
+                       esperar no rodape. Some quando o quiz abre (body.quiz-aberto). -->
+                  <div class="sticky-cta" id="stickyCta">
+                    <span class="sc-txt"><b>Dent still there after 5 seconds?</b>See what stage it is.</span>
+                    <a class="sc-btn" id="stickyCtaBtn"
+                      href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918">Check
+                      my stage</a>
                   </div>
                   <div class="q-overlay" id="quizOverlay" role="dialog" aria-modal="true"
                     aria-label="Linfaflow qualification quiz">
@@ -24647,10 +24839,10 @@
                     </div>
                   </div>
                   <script>(function () {
-                      var QUESTIONS = [{ q: "Where is your swelling?", opts: ["Feet", "Feet and ankles", "Feet, ankles and legs"], score: [1, 2, 3] }, { q: "When is your swelling worst?", opts: ["End of the day", "After standing or sitting", "All day, never lets up"], score: [1, 2, 3] }, { q: "Which symptoms do you have?", multi: !0, opts: ["Sock marks", "Heavy legs", "Tight legs", "Aching"], score: [1, 1, 1, 1] }, { q: "Press the bone on your ankle for 5 seconds, then let go. How long does the dent stay?", opts: ["It springs right back", "About 2 or 3 seconds", "5 seconds or more", "8 seconds or more"], score: [0, 2, 4, 6] }, { q: "Is one leg or ankle more swollen than the other?", opts: ["No, both look the same", "Yes, one is clearly bigger", "I have never checked"], score: [0, 2, 0] }, { q: "How long have you had it?", opts: ["Under 6 months", "6 months to 2 years", "2 to 5 years", "Over 5 years"], score: [1, 2, 3, 4] }, { q: "What has the swelling taken from you?", multi: !0, opts: ["Shoes that no longer fit", "Sleeping with my legs propped up", "Walks, trips or nights out", "Standing through a workday", "Wearing what I want"], score: [1, 1, 1, 1, 1] }, { q: "What have you tried for it?", opts: ["Compression socks", "Water pills", "Legs up", "Nothing yet"] }, { q: "What has a doctor told you about it?", opts: ["I have never brought it up", "That it is just my age", "Edema — monitor it", "I was put on a water pill"] }, { q: "How old are you?", opts: ["Under 45", "45 to 54", "55 to 64", "65+"] }, { q: "If the drain is the real cause, when would you start?", opts: ["Tonight, if I qualify", "This week", "Within the month", "Just gathering information"] }]; var PACKS = [{ name: "1 Bottle", badge: "40% OFF", free: !1, ship: "+ $9.95 Shipping", per: "$59", suffix: "", was: "$99", now: "$59", href: "https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918", img: "./assets/img-0f17ecb1c0.webp" }, { name: "2 Bottles", badge: "60% OFF", free: !0, per: "$39", suffix: "each", was: "$198", now: "$79", href: "https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918", img: "./assets/pack-bundle.webp" }, { name: "3 Bottles", badge: "70% OFF", free: !0, per: "$29", suffix: "each", was: "$297", now: "$89", href: "https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918", img: "./assets/pack-bundle.webp" }]; var DEFAULT_PACK = 2; var DELIVERY_DAYS = 3; var overlay = document.getElementById('quizOverlay'); var body = document.getElementById('qBody'); var bar = document.getElementById('qBar'); var qTop = document.querySelector('#quizOverlay .q-top'); var answers = [], step = 0, selPack = DEFAULT_PACK; function qTrack(n, d) { try { if (window.pdcTrack) window.pdcTrack(n, { payload: d || {}, platforms: [] }) } catch (_) { } } function qRespostas() { var r = []; for (var i = 0; i < QUESTIONS.length; i++) { var a = answers[i]; if (a == null) continue; var Q = QUESTIONS[i]; r.push({ n: i + 1, pergunta: Q.q, resposta: Q.multi ? (a || []).map(function (j) { return Q.opts[j] }) : Q.opts[a] }) } return r } var N = QUESTIONS.length; var lastMouse = { x: -1, y: -1 }; document.addEventListener('mousemove', function (e) { lastMouse.x = e.clientX; lastMouse.y = e.clientY }, { passive: !0 }); function setBar() { var pct = (step < N) ? Math.round(((step + 0.5) / N) * 100) : 100; bar.style.width = pct + '%' }
+                      var QUESTIONS = [{ q: "Where is your swelling?", opts: ["Feet", "Feet and ankles", "Feet, ankles and legs"], score: [1, 2, 3] }, { q: "Press the bone on your ankle for 5 seconds, then let go. How long does the dent stay?", opts: ["It springs right back", "About 2 or 3 seconds", "5 seconds or more", "8 seconds or more"], score: [0, 2, 4, 6] }, { q: "How long have you had it?", opts: ["Under 6 months", "6 months to 2 years", "2 to 5 years", "Over 5 years"], score: [1, 2, 3, 4] }, { q: "What has the swelling taken from you?", multi: !0, opts: ["Shoes that no longer fit", "Sleeping with my legs propped up", "Walks, trips or nights out", "Standing through a workday", "Wearing what I want"], score: [1, 1, 1, 1, 1] }, { q: "If the drain is the real cause, when would you start?", opts: ["Tonight, if I qualify", "This week", "Within the month", "Just gathering information"] }]; var PACKS = [{ name: "1 Bottle", badge: "40% OFF", free: !1, ship: "+ $9.95 Shipping", per: "$59", suffix: "", was: "$99", now: "$59", href: "https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918", img: "./assets/img-0f17ecb1c0.webp" }, { name: "2 Bottles", badge: "60% OFF", free: !0, per: "$39", suffix: "each", was: "$198", now: "$79", href: "https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918", img: "./assets/pack-bundle.webp" }, { name: "3 Bottles", badge: "70% OFF", free: !0, per: "$29", suffix: "each", was: "$297", now: "$89", href: "https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918", img: "./assets/pack-bundle.webp" }]; var DEFAULT_PACK = 2; var DELIVERY_DAYS = 3; var overlay = document.getElementById('quizOverlay'); var body = document.getElementById('qBody'); var bar = document.getElementById('qBar'); var qTop = document.querySelector('#quizOverlay .q-top'); var answers = [], step = 0, selPack = DEFAULT_PACK; function qTrack(n, d) { try { if (window.pdcTrack) window.pdcTrack(n, { payload: d || {}, platforms: [] }) } catch (_) { } } function qRespostas() { var r = []; for (var i = 0; i < QUESTIONS.length; i++) { var a = answers[i]; if (a == null) continue; var Q = QUESTIONS[i]; r.push({ n: i + 1, pergunta: Q.q, resposta: Q.multi ? (a || []).map(function (j) { return Q.opts[j] }) : Q.opts[a] }) } return r } var N = QUESTIONS.length; var lastMouse = { x: -1, y: -1 }; document.addEventListener('mousemove', function (e) { lastMouse.x = e.clientX; lastMouse.y = e.clientY }, { passive: !0 }); function setBar() { var pct = (step < N) ? Math.round(((step + 0.5) / N) * 100) : 100; bar.style.width = pct + '%' }
                       var noHoverClear = null; function armNoHover() { overlay.classList.add('nohover'); if (noHoverClear) document.removeEventListener('mousemove', noHoverClear); var ax = lastMouse.x, ay = lastMouse.y; noHoverClear = function (e) { if (ax < 0 || Math.abs(e.clientX - ax) > 2 || Math.abs(e.clientY - ay) > 2) { overlay.classList.remove('nohover'); document.removeEventListener('mousemove', noHoverClear); noHoverClear = null } }; document.addEventListener('mousemove', noHoverClear) }
-                      function openQuiz(e) { if (e) e.preventDefault(); answers = []; step = 0; selPack = DEFAULT_PACK; overlay.classList.add('open'); document.body.style.overflow = 'hidden'; render(); try { if (window.fbq) fbq('trackCustom', 'QuizStart'); } catch (_) { } qTrack('quiz_iniciado', {}); }
-                      function closeQuiz() { overlay.classList.remove('open'); document.body.style.overflow = '' }
+                      function openQuiz(e) { if (e) e.preventDefault(); answers = []; step = 0; selPack = DEFAULT_PACK; overlay.classList.add('open'); document.body.classList.add('quiz-aberto'); document.body.style.overflow = 'hidden'; render(); try { if (window.fbq) fbq('trackCustom', 'QuizStart'); } catch (_) { } qTrack('quiz_iniciado', {}); }
+                      function closeQuiz() { overlay.classList.remove('open'); document.body.classList.remove('quiz-aberto'); document.body.style.overflow = '' }
                       function choose(i) { answers[step] = i; qTrack('quiz_resposta', { n: step + 1, pergunta: QUESTIONS[step].q, resposta: QUESTIONS[step].opts[i], multipla: false }); step++; (step < N) ? render() : renderLoader() }
                       function back() { if (step > 0) { step--; render() } }
                       function toggleMulti(i, btn) { var arr = answers[step] || (answers[step] = []); var idx = arr.indexOf(i); if (idx > -1) { arr.splice(idx, 1); btn.classList.remove('sel') } else { arr.push(i); btn.classList.add('sel') } }
@@ -24726,21 +24918,25 @@
                         }
                         paint(); qqTimerInt = setInterval(paint, 1000)
                       }
-                      /* GRAU_V1 - o resultado que o botao "TAKE THE 60-SECOND TEST" prometeu entregar */
+                      /* GRAU_V1 - o resultado que o botao "SEE WHAT STAGE YOUR SWELLING IS IN" prometeu entregar */
                       var STAGES = [
                         {
-                          ate: 9, n: 1, nome: "The drain is slowing",
+                          pct: .34, n: 1, nome: "The drain is slowing",
                           txt: "Fluid is still clearing overnight, but it is taking longer than it should. This is the stage where the ankle still comes back on its own \u2014 and the stage almost nobody acts on."
                         },
                         {
-                          ate: 17, n: 2, nome: "The drain is backing up",
+                          pct: .63, n: 2, nome: "The drain is backing up",
                           txt: "Fluid is arriving faster than it is being carried out, and the tissue is holding it into the next day. Socks that leave trenches and shoes that pinch by noon are the drain telling you it is behind."
                         },
                         {
-                          ate: 999, n: 3, nome: "The drain has stalled",
+                          pct: 1, n: 3, nome: "The drain has stalled",
                           txt: "The fluid has sat long enough that the tissue has stopped springing back on its own. At this stage every extra week makes the next one harder to turn around."
                         }
                       ];
+                      /* Teto de pontos calculado do proprio QUESTIONS: cortar ou somar pergunta
+   reajusta os estagios sozinho, em vez de deixar o corte de 11 -> 5 empurrar
+   todo mundo para o estagio 1 com limites fixos. */
+                      var MAXPTS = (function () { var m = 0; for (var i = 0; i < QUESTIONS.length; i++) { var Q = QUESTIONS[i]; if (!Q.score) continue; if (Q.multi) { for (var j = 0; j < Q.score.length; j++) m += Q.score[j] } else { m += Math.max.apply(null, Q.score) } } return m || 1 })();
                       function qqGrau() {
                         var pts = 0;
                         for (var i = 0; i < QUESTIONS.length; i++) {
@@ -24751,7 +24947,7 @@
                           if (Q.multi) { for (var j = 0; j < a.length; j++) pts += (Q.score[a[j]] || 0) }
                           else pts += (Q.score[a] || 0);
                         }
-                        for (var s = 0; s < STAGES.length; s++) if (pts <= STAGES[s].ate) return STAGES[s];
+                        for (var s = 0; s < STAGES.length; s++) if (pts <= Math.round(MAXPTS * STAGES[s].pct)) return STAGES[s];
                         return STAGES[STAGES.length - 1];
                       }
                       function renderResult() {
@@ -24767,7 +24963,7 @@
                           + '<span class="qq-stage-n">Stage ' + G.n + ' of 3</span>'
                           + '<h2 class="qq-stage-h">' + G.nome + '</h2>'
                           + '<p class="qq-stage-txt">' + G.txt + '</p>'
-                          + '<span class="qq-stage-foot">Based on your 11 answers. Not a medical diagnosis.</span>'
+                          + '<span class="qq-stage-foot">Based on your ' + N + ' answers. Not a medical diagnosis.</span>'
                           + '</div>';
                         qTrack('quiz_grau', { estagio: G.n, nome: G.nome });
                         /* --- 1. YOU QUALIFY FOR [PRODUTO] --- */
@@ -24818,7 +25014,7 @@
                         try { if (window.utmify && window.utmify.track) window.utmify.track('InitiateCheckout'); } catch (_) { }
                         window.location.href = (window.pdcAffiliateUrl ? window.pdcAffiliateUrl(withParams(url)) : withParams(url))
                       }
-                      document.querySelectorAll('.glance-cta, .cta-btn').forEach(function (b) { b.id = 'DTC_CTA'; b.addEventListener('click', openQuiz) }); document.addEventListener('pdc:abrir-quiz', function (e) { e.preventDefault(); openQuiz() });
+                      document.querySelectorAll('.glance-cta, .cta-btn, #stickyCtaBtn').forEach(function (b) { b.id = 'DTC_CTA'; b.addEventListener('click', openQuiz) }); document.addEventListener('pdc:abrir-quiz', function (e) { e.preventDefault(); openQuiz() }); document.body.classList.add('has-sticky-cta');
                       document.getElementById('qClose').addEventListener('click', closeQuiz); overlay.addEventListener('click', function (e) { if (e.target === overlay) closeQuiz(); }); document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('open')) closeQuiz(); })
                     })()</script>
                   <script>(function () {

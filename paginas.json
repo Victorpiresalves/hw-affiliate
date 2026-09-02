@@ -269,10 +269,10 @@
     ]
   },
   "hw-linfaflow-dtc-advertorial-3-doctor": {
-    "versao": "v7-6bc5c39",
-    "hash": "6bc5c39226f413e24667ed3414a2fa6284e9748c1230efe8a218fa3da7c8279b",
-    "atualizado_em": "2026-08-31T04:49:46.262Z",
-    "commit": "01b5111c75ab0dd49cfe70f62e248444f81a360a",
+    "versao": "v9-af18eee",
+    "hash": "af18eee89833841be2ed75bc3f62b3dd1c5dea7ad21cebf9a77990c8c0cc56cc",
+    "atualizado_em": "2026-09-02T13:05:57.917Z",
+    "commit": "23098862d1997cd65c9ea7722f97a288f0b188a5",
     "historico": [
       {
         "versao": "v1-397c147",
@@ -322,6 +322,20 @@
         "em": "2026-08-31T04:49:46.262Z",
         "commit": "01b5111c75ab0dd49cfe70f62e248444f81a360a",
         "nota": null
+      },
+      {
+        "versao": "v8-700cafb",
+        "hash": "700cafb44a7304b474e714e27969827b6570aa91658fce4e28f30df3bf556f7b",
+        "em": "2026-09-02T12:31:53.992Z",
+        "commit": "23098862d1997cd65c9ea7722f97a288f0b188a5",
+        "nota": "CTA sai de 82% para 6,8% do conteudo; quiz de 11 para 5 perguntas"
+      },
+      {
+        "versao": "v9-af18eee",
+        "hash": "af18eee89833841be2ed75bc3f62b3dd1c5dea7ad21cebf9a77990c8c0cc56cc",
+        "em": "2026-09-02T13:05:57.917Z",
+        "commit": "23098862d1997cd65c9ea7722f97a288f0b188a5",
+        "nota": "CTA a 6,8% do conteudo, quiz de 11 para 5, botao verde"
       }
     ]
   },
