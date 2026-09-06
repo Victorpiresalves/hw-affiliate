@@ -269,10 +269,10 @@
     ]
   },
   "hw-linfaflow-dtc-advertorial-3-doctor": {
-    "versao": "v9-af18eee",
-    "hash": "af18eee89833841be2ed75bc3f62b3dd1c5dea7ad21cebf9a77990c8c0cc56cc",
-    "atualizado_em": "2026-09-02T13:05:57.917Z",
-    "commit": "23098862d1997cd65c9ea7722f97a288f0b188a5",
+    "versao": "v10-c10a8c6",
+    "hash": "c10a8c690ee8912b874eab890704502c32a6fdacabd5070500f4510317afda76",
+    "atualizado_em": "2026-09-06T03:01:19.352Z",
+    "commit": "d62b464cff88a0a034ce3cbbfdca8845cab55842",
     "historico": [
       {
         "versao": "v1-397c147",
@@ -336,6 +336,13 @@
         "em": "2026-09-02T13:05:57.917Z",
         "commit": "23098862d1997cd65c9ea7722f97a288f0b188a5",
         "nota": "CTA a 6,8% do conteudo, quiz de 11 para 5, botao verde"
+      },
+      {
+        "versao": "v10-c10a8c6",
+        "hash": "c10a8c690ee8912b874eab890704502c32a6fdacabd5070500f4510317afda76",
+        "em": "2026-09-06T03:01:19.352Z",
+        "commit": "d62b464cff88a0a034ce3cbbfdca8845cab55842",
+        "nota": "pergunta de pressao arterial como Q1"
       }
     ]
   },
