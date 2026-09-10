@@ -3,7 +3,7 @@
 
 <head>
 <meta name="pdc-page" content="hw-linfaflow-dtc-advertorial-3">
-<meta name="pdc-version" content="v1-22c5d5b">
+<meta name="pdc-version" content="v2-c7b9eff">
   <script
     data-no-optimize="1">var litespeed_docref = sessionStorage.getItem("litespeed_docref"); litespeed_docref && (Object.defineProperty(document, "referrer", { get: function () { return litespeed_docref } }), sessionStorage.removeItem("litespeed_docref"));</script>
   <meta charset="UTF-8">
@@ -23416,10 +23416,88 @@
                         <div class="breadcrumb">Health <span class="rt-dot">·</span>&nbsp;<span class="read-time">5 min
                             read</span></div>
                         <span class="breaking"><span class="breaking-dot"></span>Breaking News</span>
-                        <h1 class="headline">Ohio mom almost<br>killed by swollen legs<br>(don't ignore this sign)</h1>
-                        <p class="kicker" style="font-size:16px;">If you have any swelling at all in your legs, ankles,
+                        <h1 class="headline" id="pdcH1">Ohio mom almost<br>killed by swollen legs<br>(don't ignore this sign)</h1>
+                        <p class="kicker" id="pdcSub" style="font-size:16px;">If you have any swelling at all in your legs, ankles,
                           or feet—this will be the most life-saving message you'll ever read.</p>
-                        <div class="byline">
+                                                <script>
+                        /* A pagina se identifica para o tracking (mesmo bloco das paginas do A/B). */
+                        (function () {
+                          try {
+                            var m = document.querySelector('meta[name="pdc-page"]');
+                            var v = m && m.content ? m.content : "";
+                            if (!v) return;
+                            var t = 0;
+                            var esperar = setInterval(function () {
+                              if (window.pdcTrack) {
+                                clearInterval(esperar);
+                                try { window.pdcTrack("variante_vista", { payload: { v: v }, platforms: [] }) } catch (e) {}
+                              } else if (++t > 20) clearInterval(esperar);
+                            }, 500);
+                          } catch (e) {}
+                        })();
+                        </script>
+                        <script>
+                        /* DOBRA CONGRUENTE POR PALAVRA-CHAVE (portada da pagina "doctor" em 10/09/2026).
+                           Le o ValueTrack {keyword} da URL e troca SO manchete + subtitulo; o corpo (a mae de
+                           Ohio, os depoimentos, o quiz) continua o mesmo para toda variante. A manchete
+                           original fala de "swollen legs" e o grupo Tornozelos compra "foot and ankle
+                           swelling", "puffy feet", "ankle swelling" -- sem isto a busca e a pagina nao se
+                           reconhecem no grupo que e 78% do trafego.
+                           Sem keyword na URL (preview, query perdida) cai no ADGROUPID: o router roteia por
+                           ele, entao e o sinal mais confiavel depois da keyword. Ordem = prioridade: o
+                           especifico vem antes do generico, e "tornozelos" fica por ultimo de proposito
+                           porque casa quase tudo do universo de pe/perna. */
+                        (function () {
+                          try {
+                            var q = new URLSearchParams(location.search);
+                            var kw = (q.get("keyword") || "").toLowerCase();
+                            if (!kw) {
+                              var porGrupo = { "199705493472": "foot and ankle swelling", "199705493952": "water retention", "197798935374": "puffy face", "199408675655": "lymphatic support supplement" };
+                              kw = porGrupo[q.get("adgroupid") || ""] || "";
+                            }
+                            if (!kw) return;
+                            var D = [
+                              ["marca", /linfa/, null, null],
+                              ["rosto", /face|facial|eyelid|cheek|\beyes?\b/,
+                               "Ohio mom almost<br>killed by the puffiness she ignored<br>(don't ignore this sign)",
+                               "If you wake up with a puffy face, puffy eyes, or rings that won't fit\u2014this will be the most life-saving message you'll ever read."],
+                              ["retencao", /retention|fluid|water/,
+                               "Ohio mom almost<br>killed by the water her legs held<br>(don't ignore this sign)",
+                               "If your socks leave deep marks and your legs feel heavy and tight by afternoon\u2014this will be the most life-saving message you'll ever read."],
+                              ["suplemento", /supplement|capsule|tincture|herbal|lymphatic support|drops/,
+                               "Ohio mom almost<br>killed by swollen legs<br>(the lymphatic fix she wishes she'd known)",
+                               "If you've been looking for real lymphatic support for heavy, swollen legs\u2014this will be the most life-saving message you'll ever read."],
+                              ["tratamento", /treat|remedy/,
+                               "Ohio mom almost<br>killed by swollen feet nothing seemed to treat<br>(don't ignore this sign)",
+                               "If compression socks, water pills, or putting your feet up keep failing you\u2014this will be the most life-saving message you'll ever read."],
+                              ["puffy", /puffy/,
+                               "Ohio mom almost<br>killed by puffy feet<br>(don't ignore this sign)",
+                               "If your shoes pinch by noon and your socks leave marks on your ankles\u2014this will be the most life-saving message you'll ever read."],
+                              ["tornozelos", /ankle|foot|feet|swell|leg/,
+                               "Ohio mom almost<br>killed by swollen feet and ankles<br>(don't ignore this sign)",
+                               "If you have any swelling at all in your feet, ankles, or legs\u2014this will be the most life-saving message you'll ever read."]
+                            ];
+                            for (var i = 0; i < D.length; i++) {
+                              if (D[i][1].test(kw)) {
+                                var h1 = document.getElementById("pdcH1"), sb = document.getElementById("pdcSub");
+                                if (h1 && D[i][2]) h1.innerHTML = D[i][2];
+                                if (sb && D[i][3]) sb.textContent = D[i][3];
+                                /* qual dobra a pessoa viu -- sem isso nao da para saber qual converteu.
+                                   O tracking.js e async, entao espera ele aparecer em vez de perder o evento. */
+                                var nome = D[i][0], t = 0;
+                                var esperar = setInterval(function () {
+                                  if (window.pdcTrack) {
+                                    clearInterval(esperar);
+                                    try { window.pdcTrack("dobra_congruente", { payload: { dobra: nome, keyword: kw, hero: "pernas" }, platforms: [] }) } catch (e) {}
+                                  } else if (++t > 20) clearInterval(esperar);
+                                }, 500);
+                                break;
+                              }
+                            }
+                          } catch (e) {}
+                        })();
+                        </script>
+<div class="byline">
                           <img src="./assets/img-19d2b43487.webp" decoding="async" class="avatar"
                             data-src="./assets/img-19d2b43487.webp" alt="Dr. Katherine Whitmore" width="627"
                             height="627" />
