@@ -30,10 +30,10 @@
     ]
   },
   "adv3-retencao": {
-    "versao": "v7-9b0a611",
-    "hash": "9b0a611ecf2e46f0e5e9d0b8320b8a65278f7c5a3f1d6cccf7ec5f078788e47a",
-    "atualizado_em": "2026-09-11T19:11:50.847Z",
-    "commit": "38267cb9a9820af1ad4a0b45e9b08bf83b064a92",
+    "versao": "v8-b0b3945",
+    "hash": "b0b3945ac65ef5314f20e4edba83e13b384df8e92cb04196b25c219a6f827ca6",
+    "atualizado_em": "2026-09-11T19:15:39.751Z",
+    "commit": "d3008c217c9caa4cfc8b81d0dc8bb73cd5fca915",
     "historico": [
       {
         "versao": "v1-a8260d7",
@@ -83,14 +83,21 @@
         "em": "2026-09-11T19:11:50.847Z",
         "commit": "38267cb9a9820af1ad4a0b45e9b08bf83b064a92",
         "nota": "todos os CTAs com a dor do grupo: fim = If you're dealing with [dor], you need this test!; sticky = [Dor]? You need this test!"
+      },
+      {
+        "versao": "v8-b0b3945",
+        "hash": "b0b3945ac65ef5314f20e4edba83e13b384df8e92cb04196b25c219a6f827ca6",
+        "em": "2026-09-11T19:15:39.751Z",
+        "commit": "d3008c217c9caa4cfc8b81d0dc8bb73cd5fca915",
+        "nota": "todos os CTAs: Struggling with [dor]? You need this test!"
       }
     ]
   },
   "adv3-rosto": {
-    "versao": "v7-f1ca334",
-    "hash": "f1ca334d6af3609f43fd94449a0367e79d4da7898022f323ff0e1f6f420f2c45",
-    "atualizado_em": "2026-09-11T19:11:50.847Z",
-    "commit": "38267cb9a9820af1ad4a0b45e9b08bf83b064a92",
+    "versao": "v8-8280bab",
+    "hash": "8280babdc9a1d09e04de12441f05d6f03d44811826df0b39ef2dda9daaf525a2",
+    "atualizado_em": "2026-09-11T19:15:39.751Z",
+    "commit": "d3008c217c9caa4cfc8b81d0dc8bb73cd5fca915",
     "historico": [
       {
         "versao": "v1-387bb53",
@@ -140,14 +147,21 @@
         "em": "2026-09-11T19:11:50.847Z",
         "commit": "38267cb9a9820af1ad4a0b45e9b08bf83b064a92",
         "nota": "todos os CTAs com a dor do grupo: fim = If you're dealing with [dor], you need this test!; sticky = [Dor]? You need this test!"
+      },
+      {
+        "versao": "v8-8280bab",
+        "hash": "8280babdc9a1d09e04de12441f05d6f03d44811826df0b39ef2dda9daaf525a2",
+        "em": "2026-09-11T19:15:39.751Z",
+        "commit": "d3008c217c9caa4cfc8b81d0dc8bb73cd5fca915",
+        "nota": "todos os CTAs: Struggling with [dor]? You need this test!"
       }
     ]
   },
   "adv3-suplemento": {
-    "versao": "v7-bcf232f",
-    "hash": "bcf232f872d781666f596718a99f24697208397125563eb463d569e6cf2fc414",
-    "atualizado_em": "2026-09-11T19:11:50.847Z",
-    "commit": "38267cb9a9820af1ad4a0b45e9b08bf83b064a92",
+    "versao": "v8-203df45",
+    "hash": "203df455e12185b90e83a65baeae47e07d401a906febe745f0c4fbf13eedb56a",
+    "atualizado_em": "2026-09-11T19:15:39.751Z",
+    "commit": "d3008c217c9caa4cfc8b81d0dc8bb73cd5fca915",
     "historico": [
       {
         "versao": "v1-c458182",
@@ -197,6 +211,13 @@
         "em": "2026-09-11T19:11:50.847Z",
         "commit": "38267cb9a9820af1ad4a0b45e9b08bf83b064a92",
         "nota": "todos os CTAs com a dor do grupo: fim = If you're dealing with [dor], you need this test!; sticky = [Dor]? You need this test!"
+      },
+      {
+        "versao": "v8-203df45",
+        "hash": "203df455e12185b90e83a65baeae47e07d401a906febe745f0c4fbf13eedb56a",
+        "em": "2026-09-11T19:15:39.751Z",
+        "commit": "d3008c217c9caa4cfc8b81d0dc8bb73cd5fca915",
+        "nota": "todos os CTAs: Struggling with [dor]? You need this test!"
       }
     ]
   },
@@ -380,10 +401,10 @@
     ]
   },
   "hw-linfaflow-dtc-advertorial-3": {
-    "versao": "v9-596a3e2",
-    "hash": "596a3e2b3a14257002f4f1c553d479ae639e3b26dd64c9c800bdf94e2deaf2a2",
-    "atualizado_em": "2026-09-11T19:11:50.847Z",
-    "commit": "38267cb9a9820af1ad4a0b45e9b08bf83b064a92",
+    "versao": "v10-8ada5ef",
+    "hash": "8ada5eff9b0168a873ce78276c01a174647ca7afcfd80402a4184a60dfa8355d",
+    "atualizado_em": "2026-09-11T19:15:39.751Z",
+    "commit": "d3008c217c9caa4cfc8b81d0dc8bb73cd5fca915",
     "historico": [
       {
         "versao": "v1-22c5d5b",
@@ -447,6 +468,13 @@
         "em": "2026-09-11T19:11:50.847Z",
         "commit": "38267cb9a9820af1ad4a0b45e9b08bf83b064a92",
         "nota": "todos os CTAs com a dor do grupo: fim = If you're dealing with [dor], you need this test!; sticky = [Dor]? You need this test!"
+      },
+      {
+        "versao": "v10-8ada5ef",
+        "hash": "8ada5eff9b0168a873ce78276c01a174647ca7afcfd80402a4184a60dfa8355d",
+        "em": "2026-09-11T19:15:39.751Z",
+        "commit": "d3008c217c9caa4cfc8b81d0dc8bb73cd5fca915",
+        "nota": "todos os CTAs: Struggling with [dor]? You need this test!"
       }
     ]
   },
