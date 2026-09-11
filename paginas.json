@@ -30,10 +30,10 @@
     ]
   },
   "adv3-retencao": {
-    "versao": "v1-a8260d7",
-    "hash": "a8260d7d5e7bb5163e62575c076bf3ce2b594e5b07742bd4ac8d67e45703a9ad",
-    "atualizado_em": "2026-08-27T22:30:45.992Z",
-    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "versao": "v2-e781254",
+    "hash": "e78125461bcabb4be349fb4f16a93d221b43b9f2ee9ec93e475e7f61005df4c5",
+    "atualizado_em": "2026-09-11T18:46:58.144Z",
+    "commit": "54bad8f7f8c7731bf2d12d052833f509b683505f",
     "historico": [
       {
         "versao": "v1-a8260d7",
@@ -41,14 +41,21 @@
         "em": "2026-08-27T22:30:45.992Z",
         "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
         "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      },
+      {
+        "versao": "v2-e781254",
+        "hash": "e78125461bcabb4be349fb4f16a93d221b43b9f2ee9ec93e475e7f61005df4c5",
+        "em": "2026-09-11T18:46:58.144Z",
+        "commit": "54bad8f7f8c7731bf2d12d052833f509b683505f",
+        "nota": "resultado do quiz espelha o checkout do H&W: 6 frascos Buy 3 Get 3 a 19,99 = 119,94, refills a cada 30 dias"
       }
     ]
   },
   "adv3-rosto": {
-    "versao": "v1-387bb53",
-    "hash": "387bb537ccff960aa6b79b5203ca2b269a2dad26709a2730503a30b78d23e3bf",
-    "atualizado_em": "2026-08-27T22:30:45.992Z",
-    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "versao": "v2-95820a4",
+    "hash": "95820a47ced800a7c6aa9b059d915063af39c9437464107299815485adff45d1",
+    "atualizado_em": "2026-09-11T18:46:58.144Z",
+    "commit": "54bad8f7f8c7731bf2d12d052833f509b683505f",
     "historico": [
       {
         "versao": "v1-387bb53",
@@ -56,14 +63,21 @@
         "em": "2026-08-27T22:30:45.992Z",
         "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
         "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      },
+      {
+        "versao": "v2-95820a4",
+        "hash": "95820a47ced800a7c6aa9b059d915063af39c9437464107299815485adff45d1",
+        "em": "2026-09-11T18:46:58.144Z",
+        "commit": "54bad8f7f8c7731bf2d12d052833f509b683505f",
+        "nota": "resultado do quiz espelha o checkout do H&W: 6 frascos Buy 3 Get 3 a 19,99 = 119,94, refills a cada 30 dias"
       }
     ]
   },
   "adv3-suplemento": {
-    "versao": "v1-c458182",
-    "hash": "c458182b652cc7f103fdef9fab2fb239b563512c2cc4f393c223ef39d0f1686b",
-    "atualizado_em": "2026-08-27T22:30:45.992Z",
-    "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
+    "versao": "v2-dd1d175",
+    "hash": "dd1d1755d10d9552296b5845d5f6d44bdb49b079f43b032edd6ad4452d578efe",
+    "atualizado_em": "2026-09-11T18:46:58.144Z",
+    "commit": "54bad8f7f8c7731bf2d12d052833f509b683505f",
     "historico": [
       {
         "versao": "v1-c458182",
@@ -71,6 +85,13 @@
         "em": "2026-08-27T22:30:45.992Z",
         "commit": "10d9aa8cfbc6f58d5c2212937d61fb7d231959ba",
         "nota": "carimbo inicial: v1 de todas as páginas (2026-08-27)"
+      },
+      {
+        "versao": "v2-dd1d175",
+        "hash": "dd1d1755d10d9552296b5845d5f6d44bdb49b079f43b032edd6ad4452d578efe",
+        "em": "2026-09-11T18:46:58.144Z",
+        "commit": "54bad8f7f8c7731bf2d12d052833f509b683505f",
+        "nota": "resultado do quiz espelha o checkout do H&W: 6 frascos Buy 3 Get 3 a 19,99 = 119,94, refills a cada 30 dias"
       }
     ]
   },
@@ -254,10 +275,10 @@
     ]
   },
   "hw-linfaflow-dtc-advertorial-3": {
-    "versao": "v3-5292204",
-    "hash": "5292204c715d25e7c58087ef84f5ef19be6f2745e213e0c24451b0d5fc69074e",
-    "atualizado_em": "2026-09-10T23:23:22.829Z",
-    "commit": "e0e4c3ffe2679e589f7c2baa2a3d8721f9b6f2db",
+    "versao": "v4-e2c031a",
+    "hash": "e2c031a1a615f4250f82a76a21357b20ef0b435def4aed2ad82fc0fd2985c1c6",
+    "atualizado_em": "2026-09-11T18:46:58.144Z",
+    "commit": "54bad8f7f8c7731bf2d12d052833f509b683505f",
     "historico": [
       {
         "versao": "v1-22c5d5b",
@@ -279,6 +300,13 @@
         "em": "2026-09-10T23:23:22.829Z",
         "commit": "e0e4c3ffe2679e589f7c2baa2a3d8721f9b6f2db",
         "nota": "busca por pernas mantem a manchete original"
+      },
+      {
+        "versao": "v4-e2c031a",
+        "hash": "e2c031a1a615f4250f82a76a21357b20ef0b435def4aed2ad82fc0fd2985c1c6",
+        "em": "2026-09-11T18:46:58.144Z",
+        "commit": "54bad8f7f8c7731bf2d12d052833f509b683505f",
+        "nota": "resultado do quiz espelha o checkout do H&W: 6 frascos Buy 3 Get 3 a 19,99 = 119,94, refills a cada 30 dias"
       }
     ]
   },
