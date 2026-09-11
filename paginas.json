@@ -30,10 +30,10 @@
     ]
   },
   "adv3-retencao": {
-    "versao": "v4-6ea57ae",
-    "hash": "6ea57aea28fe44127b150dc2d18c89a0638befcf482300a466066622d93335b0",
-    "atualizado_em": "2026-09-11T18:52:11.543Z",
-    "commit": "3c2279aff207c647d9bfc16568324a6cf2b1506b",
+    "versao": "v5-da142ff",
+    "hash": "da142ffacc14ce8a1793cc49e864b86c803ac9712bcfb3fcb534b9c7f020a45f",
+    "atualizado_em": "2026-09-11T19:00:41.177Z",
+    "commit": "f4195139601d9083dadcbe936dc79aac487a305d",
     "historico": [
       {
         "versao": "v1-a8260d7",
@@ -62,14 +62,21 @@
         "em": "2026-09-11T18:52:11.543Z",
         "commit": "3c2279aff207c647d9bfc16568324a6cf2b1506b",
         "nota": "linha do total do quiz vira bloco proprio abaixo do cartao do preco"
+      },
+      {
+        "versao": "v5-da142ff",
+        "hash": "da142ffacc14ce8a1793cc49e864b86c803ac9712bcfb3fcb534b9c7f020a45f",
+        "em": "2026-09-11T19:00:41.177Z",
+        "commit": "f4195139601d9083dadcbe936dc79aac487a305d",
+        "nota": "CTAs verdes (verde do pop-up), bloco de teste no meio da leitura com a dor do grupo no botao, 1a tela do quiz sem 70% off"
       }
     ]
   },
   "adv3-rosto": {
-    "versao": "v4-2000728",
-    "hash": "200072887d00ab2f2a94f0422f03e40759bfa5605e4280d2a731d54bbfe83f01",
-    "atualizado_em": "2026-09-11T18:52:11.543Z",
-    "commit": "3c2279aff207c647d9bfc16568324a6cf2b1506b",
+    "versao": "v5-236ba21",
+    "hash": "236ba21c4ffe8ce525d9549f963e55f11539eebac5eac099016c48cf590de462",
+    "atualizado_em": "2026-09-11T19:00:41.177Z",
+    "commit": "f4195139601d9083dadcbe936dc79aac487a305d",
     "historico": [
       {
         "versao": "v1-387bb53",
@@ -98,14 +105,21 @@
         "em": "2026-09-11T18:52:11.543Z",
         "commit": "3c2279aff207c647d9bfc16568324a6cf2b1506b",
         "nota": "linha do total do quiz vira bloco proprio abaixo do cartao do preco"
+      },
+      {
+        "versao": "v5-236ba21",
+        "hash": "236ba21c4ffe8ce525d9549f963e55f11539eebac5eac099016c48cf590de462",
+        "em": "2026-09-11T19:00:41.177Z",
+        "commit": "f4195139601d9083dadcbe936dc79aac487a305d",
+        "nota": "CTAs verdes (verde do pop-up), bloco de teste no meio da leitura com a dor do grupo no botao, 1a tela do quiz sem 70% off"
       }
     ]
   },
   "adv3-suplemento": {
-    "versao": "v4-50687e7",
-    "hash": "50687e77087ed3faae6e2eba1971394cbb24bbc506ce5412eeb2114efad2fc95",
-    "atualizado_em": "2026-09-11T18:52:11.543Z",
-    "commit": "3c2279aff207c647d9bfc16568324a6cf2b1506b",
+    "versao": "v5-f455154",
+    "hash": "f45515437acf33753f23c8e56e9c8271b7286cc621fc942740997c67fda797e6",
+    "atualizado_em": "2026-09-11T19:00:41.177Z",
+    "commit": "f4195139601d9083dadcbe936dc79aac487a305d",
     "historico": [
       {
         "versao": "v1-c458182",
@@ -134,6 +148,13 @@
         "em": "2026-09-11T18:52:11.543Z",
         "commit": "3c2279aff207c647d9bfc16568324a6cf2b1506b",
         "nota": "linha do total do quiz vira bloco proprio abaixo do cartao do preco"
+      },
+      {
+        "versao": "v5-f455154",
+        "hash": "f45515437acf33753f23c8e56e9c8271b7286cc621fc942740997c67fda797e6",
+        "em": "2026-09-11T19:00:41.177Z",
+        "commit": "f4195139601d9083dadcbe936dc79aac487a305d",
+        "nota": "CTAs verdes (verde do pop-up), bloco de teste no meio da leitura com a dor do grupo no botao, 1a tela do quiz sem 70% off"
       }
     ]
   },
@@ -317,10 +338,10 @@
     ]
   },
   "hw-linfaflow-dtc-advertorial-3": {
-    "versao": "v6-7c2f352",
-    "hash": "7c2f352bd40e1ce9ca8311ff6a241182da57847d9ac8b027607baaab515e1ab2",
-    "atualizado_em": "2026-09-11T18:52:11.543Z",
-    "commit": "3c2279aff207c647d9bfc16568324a6cf2b1506b",
+    "versao": "v7-6f461ca",
+    "hash": "6f461ca331723e0ffe5d71ba1b20751f33418bc2216447a9ac2aa96df3c5c9b3",
+    "atualizado_em": "2026-09-11T19:00:41.177Z",
+    "commit": "f4195139601d9083dadcbe936dc79aac487a305d",
     "historico": [
       {
         "versao": "v1-22c5d5b",
@@ -363,6 +384,13 @@
         "em": "2026-09-11T18:52:11.543Z",
         "commit": "3c2279aff207c647d9bfc16568324a6cf2b1506b",
         "nota": "linha do total do quiz vira bloco proprio abaixo do cartao do preco"
+      },
+      {
+        "versao": "v7-6f461ca",
+        "hash": "6f461ca331723e0ffe5d71ba1b20751f33418bc2216447a9ac2aa96df3c5c9b3",
+        "em": "2026-09-11T19:00:41.177Z",
+        "commit": "f4195139601d9083dadcbe936dc79aac487a305d",
+        "nota": "CTAs verdes (verde do pop-up), bloco de teste no meio da leitura com a dor do grupo no botao, 1a tela do quiz sem 70% off"
       }
     ]
   },
