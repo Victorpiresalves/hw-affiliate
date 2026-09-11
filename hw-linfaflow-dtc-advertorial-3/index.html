@@ -3,7 +3,7 @@
 
 <head>
 <meta name="pdc-page" content="hw-linfaflow-dtc-advertorial-3">
-<meta name="pdc-version" content="v8-dab847d">
+<meta name="pdc-version" content="v9-596a3e2">
   <script
     data-no-optimize="1">var litespeed_docref = sessionStorage.getItem("litespeed_docref"); litespeed_docref && (Object.defineProperty(document, "referrer", { get: function () { return litespeed_docref } }), sessionStorage.removeItem("litespeed_docref"));</script>
   <meta charset="UTF-8">
@@ -23488,7 +23488,7 @@
                                 /* botao do meio da leitura: "[dor]? Take the test now". O bloco fica DEPOIS deste
                                    script no HTML, entao pode ainda nao existir: pinta agora ou no DOMContentLoaded. */
                                 var dor = D[i][4] || "Swollen legs";
-                                var pintarMeio = function () { var e = document.getElementById("pdcMidBtnTxt"); if (!e) return false; e.textContent = "If you're dealing with " + dor.charAt(0).toLowerCase() + dor.slice(1) + ", take the test now!"; return true; };
+                                var pintarMeio = function () { var e = document.getElementById("pdcMidBtnTxt"), ns = document.querySelectorAll(".pdcCtaTxt"); if (!e && !ns.length) return false; var d = dor.charAt(0).toLowerCase() + dor.slice(1); if (e) e.textContent = "If you're dealing with " + d + ", take the test now!"; for (var k = 0; k < ns.length; k++) ns[k].textContent = ns[k].classList.contains("pdcCtaCurto") ? dor + "? You need this test!" : "If you're dealing with " + d + ", you need this test!"; return true; };
                                 if (!pintarMeio()) document.addEventListener("DOMContentLoaded", pintarMeio);
                                 /* qual dobra a pessoa viu -- sem isso nao da para saber qual converteu.
                                    O tracking.js e async, entao espera ele aparecer em vez de perder o evento. */
@@ -23754,7 +23754,7 @@
                           <!-- Bloco do meio da leitura (11/09/2026): a maioria dos leitores para aqui e o 1o CTA ficava a 74% da pagina.
      Abre o MESMO quiz. O texto do botao e "[dor do grupo]? Take the test now": a dor vem da tabela D da dobra
      (keyword da URL, ou adgroupid sem keyword); sem casar nada fica o padrao escrito aqui. -->
-<style>.pdc-mid-cta .glance-cta{background:#1a7f4e}.pdc-mid-cta .glance-cta:hover{background:#15653e}</style>
+<style>.pdc-mid-cta .glance-cta{background:#1a7f4e}.pdc-mid-cta .glance-cta:hover{background:#15653e}.glance-cta .pdcCtaTxt,.glance-cta #pdcMidBtnTxt{text-transform:none;font-size:16px;letter-spacing:.01em;line-height:1.3}</style>
 <div class="pdc-mid-cta" style="margin:28px 0;padding:22px 18px;border:1px solid #cfe6da;background:#f2f8f4;border-radius:10px;text-align:center">
   <div style="display:inline-block;font-size:11px;font-weight:800;letter-spacing:.07em;color:#1a7f4e;text-transform:uppercase;margin-bottom:8px">Free 60-second test</div>
   <h3 style="font-size:22px;line-height:1.2;margin:0 0 8px;font-weight:800;color:#1a1a1a">Find out if trapped fluid is behind it &mdash; and whether Linfaflow is a match for you</h3>
@@ -23906,8 +23906,7 @@
                             </div>
                             <div class="glance-rule"></div>
                             <a class="glance-cta"
-                              href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918">GET
-                              MY 70% OFF <span class="arw" aria-hidden="true"><svg viewBox="0 0 24 24" width="20"
+                              href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918"><span class="pdcCtaTxt">If you're dealing with swollen legs, you need this test!</span> <span class="arw" aria-hidden="true"><svg viewBox="0 0 24 24" width="20"
                                   height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="1.5"
                                     stroke-linecap="round" stroke-linejoin="round"></path>
@@ -23924,8 +23923,7 @@
                             offer closes <strong class="js-deadline"></strong>.</p>
                           <div class="cta-standalone">
                             <a class="glance-cta"
-                              href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918">GET
-                              MY 70% OFF <span class="arw" aria-hidden="true"><svg viewBox="0 0 24 24" width="20"
+                              href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918"><span class="pdcCtaTxt">If you're dealing with swollen legs, you need this test!</span> <span class="arw" aria-hidden="true"><svg viewBox="0 0 24 24" width="20"
                                   height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="1.5"
                                     stroke-linecap="round" stroke-linejoin="round"></path>
@@ -23992,8 +23990,7 @@
                             </figure>
                             <div class="cta-standalone">
                               <a class="glance-cta"
-                                href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918">GET
-                                MY 70% OFF <span class="arw" aria-hidden="true"><svg viewBox="0 0 24 24" width="20"
+                                href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918"><span class="pdcCtaTxt">If you're dealing with swollen legs, you need this test!</span> <span class="arw" aria-hidden="true"><svg viewBox="0 0 24 24" width="20"
                                     height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="1.5"
                                       stroke-linecap="round" stroke-linejoin="round"></path>
@@ -24510,8 +24507,7 @@
                   </style>
                   <div class="sticky-cta-bar" id="stickyCta" aria-hidden="true">
                     <a class="glance-cta sticky-cta"
-                      href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918">GET
-                      MY 70% OFF <span class="arw" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"
+                      href="https://cc.linfaflow.com/dtcnew/checkout.php?hid=b2lkPW9mZl8wMDQyMzQ2JmFpZD1hZmZfMjkxNDkxOA%3D%3D&affid=aff_2914918"><span class="pdcCtaTxt pdcCtaCurto">Swollen legs? You need this test!</span> <span class="arw" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"
                           fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="1.5"
                             stroke-linecap="round" stroke-linejoin="round"></path>

@@ -30,10 +30,10 @@
     ]
   },
   "adv3-retencao": {
-    "versao": "v6-513f8c5",
-    "hash": "513f8c529be66eeea1147c965f3f8f8b33d1c5e54a876ef27c7c54da62f3642c",
-    "atualizado_em": "2026-09-11T19:06:10.229Z",
-    "commit": "57d24f48cae258419927a1eb76878004bdcf4f13",
+    "versao": "v7-9b0a611",
+    "hash": "9b0a611ecf2e46f0e5e9d0b8320b8a65278f7c5a3f1d6cccf7ec5f078788e47a",
+    "atualizado_em": "2026-09-11T19:11:50.847Z",
+    "commit": "38267cb9a9820af1ad4a0b45e9b08bf83b064a92",
     "historico": [
       {
         "versao": "v1-a8260d7",
@@ -76,14 +76,21 @@
         "em": "2026-09-11T19:06:10.229Z",
         "commit": "57d24f48cae258419927a1eb76878004bdcf4f13",
         "nota": "GET MY 70% OFF volta ao vermelho; so o botao do teste e verde e diz If you're dealing with [dor], take the test now!"
+      },
+      {
+        "versao": "v7-9b0a611",
+        "hash": "9b0a611ecf2e46f0e5e9d0b8320b8a65278f7c5a3f1d6cccf7ec5f078788e47a",
+        "em": "2026-09-11T19:11:50.847Z",
+        "commit": "38267cb9a9820af1ad4a0b45e9b08bf83b064a92",
+        "nota": "todos os CTAs com a dor do grupo: fim = If you're dealing with [dor], you need this test!; sticky = [Dor]? You need this test!"
       }
     ]
   },
   "adv3-rosto": {
-    "versao": "v6-72a96de",
-    "hash": "72a96de192314d3b8d2adda634c4eed94121a482a2e2b02ab4df0310dfc5b8ec",
-    "atualizado_em": "2026-09-11T19:06:10.229Z",
-    "commit": "57d24f48cae258419927a1eb76878004bdcf4f13",
+    "versao": "v7-f1ca334",
+    "hash": "f1ca334d6af3609f43fd94449a0367e79d4da7898022f323ff0e1f6f420f2c45",
+    "atualizado_em": "2026-09-11T19:11:50.847Z",
+    "commit": "38267cb9a9820af1ad4a0b45e9b08bf83b064a92",
     "historico": [
       {
         "versao": "v1-387bb53",
@@ -126,14 +133,21 @@
         "em": "2026-09-11T19:06:10.229Z",
         "commit": "57d24f48cae258419927a1eb76878004bdcf4f13",
         "nota": "GET MY 70% OFF volta ao vermelho; so o botao do teste e verde e diz If you're dealing with [dor], take the test now!"
+      },
+      {
+        "versao": "v7-f1ca334",
+        "hash": "f1ca334d6af3609f43fd94449a0367e79d4da7898022f323ff0e1f6f420f2c45",
+        "em": "2026-09-11T19:11:50.847Z",
+        "commit": "38267cb9a9820af1ad4a0b45e9b08bf83b064a92",
+        "nota": "todos os CTAs com a dor do grupo: fim = If you're dealing with [dor], you need this test!; sticky = [Dor]? You need this test!"
       }
     ]
   },
   "adv3-suplemento": {
-    "versao": "v6-98504ab",
-    "hash": "98504ab21876b97b0f0b9412473ced48b801d1f3c1b64f90e29d893a5a39cb07",
-    "atualizado_em": "2026-09-11T19:06:10.229Z",
-    "commit": "57d24f48cae258419927a1eb76878004bdcf4f13",
+    "versao": "v7-bcf232f",
+    "hash": "bcf232f872d781666f596718a99f24697208397125563eb463d569e6cf2fc414",
+    "atualizado_em": "2026-09-11T19:11:50.847Z",
+    "commit": "38267cb9a9820af1ad4a0b45e9b08bf83b064a92",
     "historico": [
       {
         "versao": "v1-c458182",
@@ -176,6 +190,13 @@
         "em": "2026-09-11T19:06:10.229Z",
         "commit": "57d24f48cae258419927a1eb76878004bdcf4f13",
         "nota": "GET MY 70% OFF volta ao vermelho; so o botao do teste e verde e diz If you're dealing with [dor], take the test now!"
+      },
+      {
+        "versao": "v7-bcf232f",
+        "hash": "bcf232f872d781666f596718a99f24697208397125563eb463d569e6cf2fc414",
+        "em": "2026-09-11T19:11:50.847Z",
+        "commit": "38267cb9a9820af1ad4a0b45e9b08bf83b064a92",
+        "nota": "todos os CTAs com a dor do grupo: fim = If you're dealing with [dor], you need this test!; sticky = [Dor]? You need this test!"
       }
     ]
   },
@@ -359,10 +380,10 @@
     ]
   },
   "hw-linfaflow-dtc-advertorial-3": {
-    "versao": "v8-dab847d",
-    "hash": "dab847dcdd6c3a901bd863031836d4e170920e3d636bfebc88c65ffcf266045b",
-    "atualizado_em": "2026-09-11T19:06:10.229Z",
-    "commit": "57d24f48cae258419927a1eb76878004bdcf4f13",
+    "versao": "v9-596a3e2",
+    "hash": "596a3e2b3a14257002f4f1c553d479ae639e3b26dd64c9c800bdf94e2deaf2a2",
+    "atualizado_em": "2026-09-11T19:11:50.847Z",
+    "commit": "38267cb9a9820af1ad4a0b45e9b08bf83b064a92",
     "historico": [
       {
         "versao": "v1-22c5d5b",
@@ -419,6 +440,13 @@
         "em": "2026-09-11T19:06:10.229Z",
         "commit": "57d24f48cae258419927a1eb76878004bdcf4f13",
         "nota": "GET MY 70% OFF volta ao vermelho; so o botao do teste e verde e diz If you're dealing with [dor], take the test now!"
+      },
+      {
+        "versao": "v9-596a3e2",
+        "hash": "596a3e2b3a14257002f4f1c553d479ae639e3b26dd64c9c800bdf94e2deaf2a2",
+        "em": "2026-09-11T19:11:50.847Z",
+        "commit": "38267cb9a9820af1ad4a0b45e9b08bf83b064a92",
+        "nota": "todos os CTAs com a dor do grupo: fim = If you're dealing with [dor], you need this test!; sticky = [Dor]? You need this test!"
       }
     ]
   },
