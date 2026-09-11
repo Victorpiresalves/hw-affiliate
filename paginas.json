@@ -30,10 +30,10 @@
     ]
   },
   "adv3-retencao": {
-    "versao": "v3-adbf873",
-    "hash": "adbf873a8efa988c5828c9303f5f133c4020bdd457117c56284cb76cf1fc2dd4",
-    "atualizado_em": "2026-09-11T18:50:45.816Z",
-    "commit": "8f2713d57d6cec13d00e489c17b1d0dfcf86970a",
+    "versao": "v4-6ea57ae",
+    "hash": "6ea57aea28fe44127b150dc2d18c89a0638befcf482300a466066622d93335b0",
+    "atualizado_em": "2026-09-11T18:52:11.543Z",
+    "commit": "3c2279aff207c647d9bfc16568324a6cf2b1506b",
     "historico": [
       {
         "versao": "v1-a8260d7",
@@ -55,14 +55,21 @@
         "em": "2026-09-11T18:50:45.816Z",
         "commit": "8f2713d57d6cec13d00e489c17b1d0dfcf86970a",
         "nota": "linha do total do quiz abaixo do preco, largura inteira"
+      },
+      {
+        "versao": "v4-6ea57ae",
+        "hash": "6ea57aea28fe44127b150dc2d18c89a0638befcf482300a466066622d93335b0",
+        "em": "2026-09-11T18:52:11.543Z",
+        "commit": "3c2279aff207c647d9bfc16568324a6cf2b1506b",
+        "nota": "linha do total do quiz vira bloco proprio abaixo do cartao do preco"
       }
     ]
   },
   "adv3-rosto": {
-    "versao": "v3-bc7ee89",
-    "hash": "bc7ee89e60a2979aee6fdc9171cc0f97efea477ab0412509c202283e75017b9f",
-    "atualizado_em": "2026-09-11T18:50:45.816Z",
-    "commit": "8f2713d57d6cec13d00e489c17b1d0dfcf86970a",
+    "versao": "v4-2000728",
+    "hash": "200072887d00ab2f2a94f0422f03e40759bfa5605e4280d2a731d54bbfe83f01",
+    "atualizado_em": "2026-09-11T18:52:11.543Z",
+    "commit": "3c2279aff207c647d9bfc16568324a6cf2b1506b",
     "historico": [
       {
         "versao": "v1-387bb53",
@@ -84,14 +91,21 @@
         "em": "2026-09-11T18:50:45.816Z",
         "commit": "8f2713d57d6cec13d00e489c17b1d0dfcf86970a",
         "nota": "linha do total do quiz abaixo do preco, largura inteira"
+      },
+      {
+        "versao": "v4-2000728",
+        "hash": "200072887d00ab2f2a94f0422f03e40759bfa5605e4280d2a731d54bbfe83f01",
+        "em": "2026-09-11T18:52:11.543Z",
+        "commit": "3c2279aff207c647d9bfc16568324a6cf2b1506b",
+        "nota": "linha do total do quiz vira bloco proprio abaixo do cartao do preco"
       }
     ]
   },
   "adv3-suplemento": {
-    "versao": "v3-6a61a70",
-    "hash": "6a61a703d08ded0bcbc7807f1a8f71f92f0859aab8b159de6371b8d1c40b0b2f",
-    "atualizado_em": "2026-09-11T18:50:45.816Z",
-    "commit": "8f2713d57d6cec13d00e489c17b1d0dfcf86970a",
+    "versao": "v4-50687e7",
+    "hash": "50687e77087ed3faae6e2eba1971394cbb24bbc506ce5412eeb2114efad2fc95",
+    "atualizado_em": "2026-09-11T18:52:11.543Z",
+    "commit": "3c2279aff207c647d9bfc16568324a6cf2b1506b",
     "historico": [
       {
         "versao": "v1-c458182",
@@ -113,6 +127,13 @@
         "em": "2026-09-11T18:50:45.816Z",
         "commit": "8f2713d57d6cec13d00e489c17b1d0dfcf86970a",
         "nota": "linha do total do quiz abaixo do preco, largura inteira"
+      },
+      {
+        "versao": "v4-50687e7",
+        "hash": "50687e77087ed3faae6e2eba1971394cbb24bbc506ce5412eeb2114efad2fc95",
+        "em": "2026-09-11T18:52:11.543Z",
+        "commit": "3c2279aff207c647d9bfc16568324a6cf2b1506b",
+        "nota": "linha do total do quiz vira bloco proprio abaixo do cartao do preco"
       }
     ]
   },
@@ -296,10 +317,10 @@
     ]
   },
   "hw-linfaflow-dtc-advertorial-3": {
-    "versao": "v5-982b2f0",
-    "hash": "982b2f0266c47a1f8b4f79446733b29c0c2b23376a43c7c89dc66e62acb1ffce",
-    "atualizado_em": "2026-09-11T18:50:45.816Z",
-    "commit": "8f2713d57d6cec13d00e489c17b1d0dfcf86970a",
+    "versao": "v6-7c2f352",
+    "hash": "7c2f352bd40e1ce9ca8311ff6a241182da57847d9ac8b027607baaab515e1ab2",
+    "atualizado_em": "2026-09-11T18:52:11.543Z",
+    "commit": "3c2279aff207c647d9bfc16568324a6cf2b1506b",
     "historico": [
       {
         "versao": "v1-22c5d5b",
@@ -335,6 +356,13 @@
         "em": "2026-09-11T18:50:45.816Z",
         "commit": "8f2713d57d6cec13d00e489c17b1d0dfcf86970a",
         "nota": "linha do total do quiz abaixo do preco, largura inteira"
+      },
+      {
+        "versao": "v6-7c2f352",
+        "hash": "7c2f352bd40e1ce9ca8311ff6a241182da57847d9ac8b027607baaab515e1ab2",
+        "em": "2026-09-11T18:52:11.543Z",
+        "commit": "3c2279aff207c647d9bfc16568324a6cf2b1506b",
+        "nota": "linha do total do quiz vira bloco proprio abaixo do cartao do preco"
       }
     ]
   },
