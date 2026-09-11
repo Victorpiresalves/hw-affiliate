@@ -30,10 +30,10 @@
     ]
   },
   "adv3-retencao": {
-    "versao": "v5-da142ff",
-    "hash": "da142ffacc14ce8a1793cc49e864b86c803ac9712bcfb3fcb534b9c7f020a45f",
-    "atualizado_em": "2026-09-11T19:00:41.177Z",
-    "commit": "f4195139601d9083dadcbe936dc79aac487a305d",
+    "versao": "v6-513f8c5",
+    "hash": "513f8c529be66eeea1147c965f3f8f8b33d1c5e54a876ef27c7c54da62f3642c",
+    "atualizado_em": "2026-09-11T19:06:10.229Z",
+    "commit": "57d24f48cae258419927a1eb76878004bdcf4f13",
     "historico": [
       {
         "versao": "v1-a8260d7",
@@ -69,14 +69,21 @@
         "em": "2026-09-11T19:00:41.177Z",
         "commit": "f4195139601d9083dadcbe936dc79aac487a305d",
         "nota": "CTAs verdes (verde do pop-up), bloco de teste no meio da leitura com a dor do grupo no botao, 1a tela do quiz sem 70% off"
+      },
+      {
+        "versao": "v6-513f8c5",
+        "hash": "513f8c529be66eeea1147c965f3f8f8b33d1c5e54a876ef27c7c54da62f3642c",
+        "em": "2026-09-11T19:06:10.229Z",
+        "commit": "57d24f48cae258419927a1eb76878004bdcf4f13",
+        "nota": "GET MY 70% OFF volta ao vermelho; so o botao do teste e verde e diz If you're dealing with [dor], take the test now!"
       }
     ]
   },
   "adv3-rosto": {
-    "versao": "v5-236ba21",
-    "hash": "236ba21c4ffe8ce525d9549f963e55f11539eebac5eac099016c48cf590de462",
-    "atualizado_em": "2026-09-11T19:00:41.177Z",
-    "commit": "f4195139601d9083dadcbe936dc79aac487a305d",
+    "versao": "v6-72a96de",
+    "hash": "72a96de192314d3b8d2adda634c4eed94121a482a2e2b02ab4df0310dfc5b8ec",
+    "atualizado_em": "2026-09-11T19:06:10.229Z",
+    "commit": "57d24f48cae258419927a1eb76878004bdcf4f13",
     "historico": [
       {
         "versao": "v1-387bb53",
@@ -112,14 +119,21 @@
         "em": "2026-09-11T19:00:41.177Z",
         "commit": "f4195139601d9083dadcbe936dc79aac487a305d",
         "nota": "CTAs verdes (verde do pop-up), bloco de teste no meio da leitura com a dor do grupo no botao, 1a tela do quiz sem 70% off"
+      },
+      {
+        "versao": "v6-72a96de",
+        "hash": "72a96de192314d3b8d2adda634c4eed94121a482a2e2b02ab4df0310dfc5b8ec",
+        "em": "2026-09-11T19:06:10.229Z",
+        "commit": "57d24f48cae258419927a1eb76878004bdcf4f13",
+        "nota": "GET MY 70% OFF volta ao vermelho; so o botao do teste e verde e diz If you're dealing with [dor], take the test now!"
       }
     ]
   },
   "adv3-suplemento": {
-    "versao": "v5-f455154",
-    "hash": "f45515437acf33753f23c8e56e9c8271b7286cc621fc942740997c67fda797e6",
-    "atualizado_em": "2026-09-11T19:00:41.177Z",
-    "commit": "f4195139601d9083dadcbe936dc79aac487a305d",
+    "versao": "v6-98504ab",
+    "hash": "98504ab21876b97b0f0b9412473ced48b801d1f3c1b64f90e29d893a5a39cb07",
+    "atualizado_em": "2026-09-11T19:06:10.229Z",
+    "commit": "57d24f48cae258419927a1eb76878004bdcf4f13",
     "historico": [
       {
         "versao": "v1-c458182",
@@ -155,6 +169,13 @@
         "em": "2026-09-11T19:00:41.177Z",
         "commit": "f4195139601d9083dadcbe936dc79aac487a305d",
         "nota": "CTAs verdes (verde do pop-up), bloco de teste no meio da leitura com a dor do grupo no botao, 1a tela do quiz sem 70% off"
+      },
+      {
+        "versao": "v6-98504ab",
+        "hash": "98504ab21876b97b0f0b9412473ced48b801d1f3c1b64f90e29d893a5a39cb07",
+        "em": "2026-09-11T19:06:10.229Z",
+        "commit": "57d24f48cae258419927a1eb76878004bdcf4f13",
+        "nota": "GET MY 70% OFF volta ao vermelho; so o botao do teste e verde e diz If you're dealing with [dor], take the test now!"
       }
     ]
   },
@@ -338,10 +359,10 @@
     ]
   },
   "hw-linfaflow-dtc-advertorial-3": {
-    "versao": "v7-6f461ca",
-    "hash": "6f461ca331723e0ffe5d71ba1b20751f33418bc2216447a9ac2aa96df3c5c9b3",
-    "atualizado_em": "2026-09-11T19:00:41.177Z",
-    "commit": "f4195139601d9083dadcbe936dc79aac487a305d",
+    "versao": "v8-dab847d",
+    "hash": "dab847dcdd6c3a901bd863031836d4e170920e3d636bfebc88c65ffcf266045b",
+    "atualizado_em": "2026-09-11T19:06:10.229Z",
+    "commit": "57d24f48cae258419927a1eb76878004bdcf4f13",
     "historico": [
       {
         "versao": "v1-22c5d5b",
@@ -391,6 +412,13 @@
         "em": "2026-09-11T19:00:41.177Z",
         "commit": "f4195139601d9083dadcbe936dc79aac487a305d",
         "nota": "CTAs verdes (verde do pop-up), bloco de teste no meio da leitura com a dor do grupo no botao, 1a tela do quiz sem 70% off"
+      },
+      {
+        "versao": "v8-dab847d",
+        "hash": "dab847dcdd6c3a901bd863031836d4e170920e3d636bfebc88c65ffcf266045b",
+        "em": "2026-09-11T19:06:10.229Z",
+        "commit": "57d24f48cae258419927a1eb76878004bdcf4f13",
+        "nota": "GET MY 70% OFF volta ao vermelho; so o botao do teste e verde e diz If you're dealing with [dor], take the test now!"
       }
     ]
   },
