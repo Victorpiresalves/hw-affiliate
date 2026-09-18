@@ -401,10 +401,10 @@
     ]
   },
   "crowned-advertorial-halogrow": {
-    "versao": "v1-3f00132",
-    "hash": "3f00132562b0469c3e72a8a75f036d33567f87f5d04acda83e3269ee93bae896",
-    "atualizado_em": "2026-09-18T01:16:04.696Z",
-    "commit": "f4e5593933e350f1ea6ca2485e65ed54fb9d18de",
+    "versao": "v2-77bb9e8",
+    "hash": "77bb9e8dcf4ae96829cf3a114c76c749606cea9f47ec1919b9935ac76496dccb",
+    "atualizado_em": "2026-09-18T01:28:40.072Z",
+    "commit": "877c741c75e627649039bfb46e0573a971080f13",
     "historico": [
       {
         "versao": "v1-3f00132",
@@ -412,6 +412,13 @@
         "em": "2026-09-18T01:16:04.696Z",
         "commit": "f4e5593933e350f1ea6ca2485e65ed54fb9d18de",
         "nota": "HaloGrow (Crowned) clonada do template 08b2c9d8; CTAs -> checkout Crowned 3 frascos; ClickFlare do concorrente removido"
+      },
+      {
+        "versao": "v2-77bb9e8",
+        "hash": "77bb9e8dcf4ae96829cf3a114c76c749606cea9f47ec1919b9935ac76496dccb",
+        "em": "2026-09-18T01:28:40.072Z",
+        "commit": "877c741c75e627649039bfb46e0573a971080f13",
+        "nota": "troca de marca: HaloGrow -> Crowned no texto (16x)"
       }
     ]
   },
