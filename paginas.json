@@ -400,6 +400,21 @@
       }
     ]
   },
+  "crowned-advertorial-halogrow": {
+    "versao": "v1-3f00132",
+    "hash": "3f00132562b0469c3e72a8a75f036d33567f87f5d04acda83e3269ee93bae896",
+    "atualizado_em": "2026-09-18T01:16:04.696Z",
+    "commit": "f4e5593933e350f1ea6ca2485e65ed54fb9d18de",
+    "historico": [
+      {
+        "versao": "v1-3f00132",
+        "hash": "3f00132562b0469c3e72a8a75f036d33567f87f5d04acda83e3269ee93bae896",
+        "em": "2026-09-18T01:16:04.696Z",
+        "commit": "f4e5593933e350f1ea6ca2485e65ed54fb9d18de",
+        "nota": "HaloGrow (Crowned) clonada do template 08b2c9d8; CTAs -> checkout Crowned 3 frascos; ClickFlare do concorrente removido"
+      }
+    ]
+  },
   "hw-linfaflow-dtc-advertorial-3": {
     "versao": "v10-8ada5ef",
     "hash": "8ada5eff9b0168a873ce78276c01a174647ca7afcfd80402a4184a60dfa8355d",
