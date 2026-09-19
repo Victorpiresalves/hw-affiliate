@@ -401,10 +401,10 @@
     ]
   },
   "crowned-advertorial-halogrow": {
-    "versao": "v4-bce39ff",
-    "hash": "bce39ff09f9c2feccf5463d84c278a2c9972449b0f0bfd6d96c276fbeb4e7372",
-    "atualizado_em": "2026-09-19T15:28:01.641Z",
-    "commit": "58421b954e1e3a4b76dc25ddea16f378e1f3012c",
+    "versao": "v5-1350e11",
+    "hash": "1350e110c3fce6a25bc809333fe8e14c6c277ed7885a56e70ae2c406fe3c0fc0",
+    "atualizado_em": "2026-09-19T17:41:13.326Z",
+    "commit": "5131f36b7221a1756200ea5a53de68d5c79773bd",
     "historico": [
       {
         "versao": "v1-3f00132",
@@ -433,6 +433,13 @@
         "em": "2026-09-19T15:28:01.641Z",
         "commit": "58421b954e1e3a4b76dc25ddea16f378e1f3012c",
         "nota": "Crowned: garantia 90d, formula real (GHK-Cu/Niacinamide/Panthenol), teste do elastico, anti-minoxidil, FAQ, prova da marca, privacy/terms proprios"
+      },
+      {
+        "versao": "v5-1350e11",
+        "hash": "1350e110c3fce6a25bc809333fe8e14c6c277ed7885a56e70ae2c406fe3c0fc0",
+        "em": "2026-09-19T17:41:13.326Z",
+        "commit": "5131f36b7221a1756200ea5a53de68d5c79773bd",
+        "nota": "perf: CSS sem duplicatas (438->64 KB), favicon e logo menores, avatares em WebP, width/height nas imagens"
       }
     ]
   },
