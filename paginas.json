@@ -401,10 +401,10 @@
     ]
   },
   "crowned-advertorial-halogrow": {
-    "versao": "v2-77bb9e8",
-    "hash": "77bb9e8dcf4ae96829cf3a114c76c749606cea9f47ec1919b9935ac76496dccb",
-    "atualizado_em": "2026-09-18T01:28:40.072Z",
-    "commit": "877c741c75e627649039bfb46e0573a971080f13",
+    "versao": "v3-02930a4",
+    "hash": "02930a4f45882ce285e7dbac7e046df5a87eeb892d5d0af4d4529cedac39cd45",
+    "atualizado_em": "2026-09-19T15:17:57.249Z",
+    "commit": "1fe65f1c184553710fe38ac452f7e71a3913c582",
     "historico": [
       {
         "versao": "v1-3f00132",
@@ -419,6 +419,13 @@
         "em": "2026-09-18T01:28:40.072Z",
         "commit": "877c741c75e627649039bfb46e0573a971080f13",
         "nota": "troca de marca: HaloGrow -> Crowned no texto (16x)"
+      },
+      {
+        "versao": "v3-02930a4",
+        "hash": "02930a4f45882ce285e7dbac7e046df5a87eeb892d5d0af4d4529cedac39cd45",
+        "em": "2026-09-19T15:17:57.249Z",
+        "commit": "1fe65f1c184553710fe38ac452f7e71a3913c582",
+        "nota": "Crowned: spray -> serum em conta-gotas, nome do rotulo, aviso de cosmetico"
       }
     ]
   },
