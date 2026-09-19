@@ -401,10 +401,10 @@
     ]
   },
   "crowned-advertorial-halogrow": {
-    "versao": "v3-02930a4",
-    "hash": "02930a4f45882ce285e7dbac7e046df5a87eeb892d5d0af4d4529cedac39cd45",
-    "atualizado_em": "2026-09-19T15:17:57.249Z",
-    "commit": "1fe65f1c184553710fe38ac452f7e71a3913c582",
+    "versao": "v4-bce39ff",
+    "hash": "bce39ff09f9c2feccf5463d84c278a2c9972449b0f0bfd6d96c276fbeb4e7372",
+    "atualizado_em": "2026-09-19T15:28:01.641Z",
+    "commit": "58421b954e1e3a4b76dc25ddea16f378e1f3012c",
     "historico": [
       {
         "versao": "v1-3f00132",
@@ -426,6 +426,13 @@
         "em": "2026-09-19T15:17:57.249Z",
         "commit": "1fe65f1c184553710fe38ac452f7e71a3913c582",
         "nota": "Crowned: spray -> serum em conta-gotas, nome do rotulo, aviso de cosmetico"
+      },
+      {
+        "versao": "v4-bce39ff",
+        "hash": "bce39ff09f9c2feccf5463d84c278a2c9972449b0f0bfd6d96c276fbeb4e7372",
+        "em": "2026-09-19T15:28:01.641Z",
+        "commit": "58421b954e1e3a4b76dc25ddea16f378e1f3012c",
+        "nota": "Crowned: garantia 90d, formula real (GHK-Cu/Niacinamide/Panthenol), teste do elastico, anti-minoxidil, FAQ, prova da marca, privacy/terms proprios"
       }
     ]
   },
