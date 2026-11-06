@@ -1,0 +1,1635 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"></head><body>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerve Relief Protocol</title>
+
+    <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet">
+
+    <meta name="description" content="Natural supplement ">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nervereliefprotocol.com/dtc-b">
+    <meta property="og:title" content="Natural supplement ">
+    <meta property="og:description" content="Natural supplement ">
+    <meta property="og:image" content="./assets/img-41646603b2.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nervereliefprotocol.com/dtc-b">
+    <meta property="twitter:title" content="Natural supplement ">
+    <meta property="twitter:description" content="Natural supplement ">
+    <meta property="twitter:image" content="./assets/img-41646603b2.webp">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+@keyframes mexer {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(5deg);
+    filter: blur(2px);
+  }
+}
+@keyframes mexerscale {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  50% {
+    filter: blur(0.5px);
+    transform: scale(105%);
+  }
+}
+@keyframes float-pill {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-3deg);
+  }
+  75% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+@keyframes lx-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes bg-pill-float {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+@keyframes bg-linhas-glow {
+  0%, 100% {
+    opacity: 0.4;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 0.8;
+    filter: brightness(1.4);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  color: #4f6a7c;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.container {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn {
+  border-radius: 50px;
+  border-bottom: 6px solid #116800;
+  background: linear-gradient(180deg, #35f60f 0%, #1fa604 100%);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  padding: 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  transition: all 0.7s;
+}
+.btn::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("./assets/img-dbeb702be4.svg");
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(31, 166, 4, 0.4);
+  filter: brightness(110%);
+}
+
+.title,
+h1 {
+  color: #0b3c5d;
+  font-size: 40px;
+  font-weight: 700;
+}
+.title b,
+h1 b {
+  color: #00c2ff;
+}
+
+.check-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #35f60f 0%, #1fa604 100%);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check-icon::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 13px;
+  border-right: 2.5px solid #fff;
+  border-bottom: 2.5px solid #fff;
+  transform: rotate(45deg) translate(-1px, -2px);
+}
+
+.kits-intro {
+  padding: 34px 0 0;
+}
+.kits-intro > .container {
+  width: 95%;
+}
+.kits-intro .text-area {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px;
+  border: 1px solid rgba(11, 60, 93, 0.08);
+  border-radius: 24px;
+  background: linear-gradient(180deg, #ffffff 0%, #f4fbff 100%);
+  box-shadow: 0 16px 34px rgba(11, 60, 93, 0.08);
+  text-align: left;
+}
+.kits-intro .title {
+  color: #04344B;
+  font-size: 28px;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+.kits-intro p {
+  color: #4f6a7c;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+.kits-intro p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 900px) {
+  .kits-intro {
+    padding-top: 28px;
+  }
+  .kits-intro .text-area {
+    padding: 24px 20px;
+  }
+  .kits-intro .title {
+    font-size: 24px;
+  }
+}
+
+.area-kits {
+  margin: 80px 0;
+}
+@media (max-width: 900px) {
+  .area-kits {
+    margin-bottom: 40px;
+  }
+}
+.area-kits > .container {
+  width: 95%;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 80px;
+}
+.area-kits > .container .text-area {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.area-kits > .container .text-area h2,
+.area-kits > .container .text-area p {
+  text-align: center;
+}
+.area-kits > .container .text-area h2 {
+  color: #04344B;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+.area-kits > .container .text-area p {
+  font-size: 18px;
+}
+.area-kits > .container .placeholder {
+  border: 2px dashed rgba(11, 60, 93, 0.25);
+  border-radius: 12px;
+  background: rgba(11, 60, 93, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+.area-kits > .container .placeholder::after {
+  content: attr(data-label);
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(11, 60, 93, 0.35);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.area-kits > .container .placeholder--mockup {
+  height: 260px;
+  max-width: 280px;
+  margin-bottom: 10px;
+}
+@media (max-width: 900px) {
+  .area-kits > .container .placeholder--mockup {
+    height: 160px;
+  }
+}
+.area-kits > .container .placeholder--button {
+  height: 60px;
+  max-width: 280px;
+  margin-bottom: 10px;
+}
+@media (max-width: 900px) {
+  .area-kits > .container .placeholder--button {
+    height: 48px;
+  }
+}
+.area-kits > .container .placeholder--cards {
+  height: 32px;
+  max-width: 220px;
+  margin-bottom: 14px;
+}
+.area-kits > .container .divider {
+  border: none;
+  border-top: 2px solid rgba(11, 60, 93, 0.15);
+  margin: 0 0 16px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.area-kits > .container ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.area-kits > .container ul.a2 {
+  margin-bottom: 0;
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 24px;
+  }
+}
+.area-kits > .container ul a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  transition: all 0.6s;
+  border: 1px solid rgba(13, 42, 69, 0.15);
+  overflow: hidden;
+  border-radius: 20px;
+  border-bottom: 10px solid #0B3C5D;
+  background: #FFF;
+}
+.area-kits > .container ul a:hover {
+  transform: scale(1.01);
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul a {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+.area-kits > .container ul a .valores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.area-kits > .container ul a .valores.mb {
+  display: none;
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul a .valores.mb {
+    display: flex;
+  }
+}
+.area-kits > .container ul a .valores.dk {
+  display: flex;
+  margin-top: 10px;
+}
+.area-kits > .container ul a .valores * {
+  font-size: 24px;
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul a .valores * {
+    font-size: 20px;
+  }
+}
+.area-kits > .container ul a .valores s {
+  color: #4F6A7C;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: line-through;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+}
+.area-kits > .container ul a .valores span {
+  color: #04344B;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.area-kits > .container ul a .valores small {
+  font-size: 13px;
+  font-weight: bold;
+}
+.area-kits > .container ul a .header {
+  border-radius: 10px 10px 0 0;
+  background: #04344B;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  text-transform: uppercase;
+  width: 100%;
+  letter-spacing: 1px;
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul a .header {
+    grid-column: -1/1;
+    font-size: 18px;
+  }
+}
+.area-kits > .container ul a .main {
+  padding: 16px 12px 0;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul a .main {
+    padding: 16px 0px;
+    padding-left: 10px;
+  }
+}
+.area-kits > .container ul a .main strong {
+  font-size: 40px;
+  display: block;
+  color: #0b3c5d;
+  color: #0B3C5D;
+  text-align: center;
+  font-weight: 600;
+  line-height: 130%;
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul a .main strong {
+    font-size: 24px;
+  }
+}
+@media (max-width: 370px) {
+  .area-kits > .container ul a .main strong {
+    font-size: 20px;
+  }
+}
+.area-kits > .container ul a .main .days {
+  display: block;
+  margin-bottom: 20px;
+  color: #4F6A7C;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul a .main .days {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 370px) {
+  .area-kits > .container ul a .main .days {
+    font-size: 14px;
+  }
+}
+.area-kits > .container ul a .main .area-img {
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul a .main .area-img {
+    overflow: visible;
+  }
+}
+.area-kits > .container ul a .main .area-img::before {
+  display: none;
+}
+.area-kits > .container ul a .main .area-img .frete {
+  max-width: 120px;
+  position: absolute;
+  top: -12%;
+  left: 4%;
+  z-index: 5;
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul a .main .area-img .frete {
+    max-width: 75px;
+  }
+}
+.area-kits > .container ul a .main .area-img .save {
+  --badge-size: 76px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: var(--badge-size);
+  height: var(--badge-size);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background: url("./assets/img-a2f03989e9.svg") center/100% 100% no-repeat;
+}
+.area-kits > .container ul a .main .area-img .save span {
+  color: inherit;
+  font-size: calc(var(--badge-size) * 0.18);
+  font-weight: 400;
+  line-height: 0.9;
+}
+.area-kits > .container ul a .main .area-img .save strong {
+  color: inherit;
+  font-size: calc(var(--badge-size) * 0.28);
+  font-weight: 700;
+  line-height: 1;
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul a .main .area-img .save {
+    --badge-size: 60px;
+  }
+}
+.area-kits > .container ul a .main .area-img img {
+  height: 267px;
+  position: relative;
+  margin: 0 auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 2;
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul a .main .area-img img {
+    height: 140px;
+  }
+}
+.area-kits > .container ul a small {
+  color: currentColor;
+}
+.area-kits > .container ul a .price {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul a .price {
+    font-size: 14px;
+  }
+}
+.area-kits > .container ul a .price strong {
+  display: flex;
+  margin-bottom: -20px;
+  color: #04344B;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 130%;
+}
+.area-kits > .container ul a .price strong small {
+  font-size: 18px;
+  padding-top: 10px;
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul a .price strong {
+    font-size: 40px;
+  }
+}
+@media (max-width: 370px) {
+  .area-kits > .container ul a .price strong {
+    font-size: 30px;
+  }
+}
+.area-kits > .container ul a ul {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 4px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.area-kits > .container ul a ul li {
+  grid-template-columns: 30px 1fr;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: flex;
+  padding: 10px 10px 10px 20px;
+  align-items: center;
+  gap: 15px;
+  align-self: stretch;
+  border-radius: 5px;
+  background: rgba(204, 225, 233, 0.4);
+}
+.area-kits > .container ul a ul li::before {
+  content: url("./assets/img-d54e2971bf.svg");
+}
+.area-kits > .container ul a ul li.orrivi::before {
+  content: url("./assets/img-d329165b4d.svg");
+}
+.area-kits > .container ul a ul li.morromeno::before {
+  content: url("./assets/img-51c8bb7aa2.svg");
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul a ul li {
+    font-size: 12px;
+    display: flex;
+    gap: 8px;
+    margin-left: 0;
+    grid-template-columns: 20px 1fr;
+  }
+  .area-kits > .container ul a ul li img {
+    max-width: 20px;
+  }
+}
+@media (max-width: 370px) {
+  .area-kits > .container ul a ul li {
+    font-size: 14px;
+  }
+}
+.area-kits > .container ul a .footer {
+  padding: 0 24px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul a .footer {
+    padding: 16px 10px 20px;
+  }
+}
+.area-kits > .container ul a .footer .buy-cta {
+  margin-bottom: 20px;
+}
+.area-kits > .container ul .best-option a {
+  border-radius: 20px;
+  border-bottom: 10px solid var(--gold, #CBA75A);
+  background: #FFF6DE;
+}
+.area-kits > .container ul .best-option a .header {
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(270deg, #A4823D 0%, #F7DC97 50.19%, #A4823D 100%);
+  color: #011924;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.area-kits > .container ul .best-option a .price strong {
+  font-size: 80px;
+  color: #0b3c5d;
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul .best-option a .price strong {
+    font-size: 40px;
+  }
+}
+.area-kits > .container ul .best-option a .main .area-img .save {
+  right: 5%;
+  top: 60%;
+}
+@media (min-width: 796px) {
+  .area-kits > .container ul .best-option a .footer {
+    padding-bottom: 70px;
+  }
+}
+.area-kits > .container ul .best-option a .placeholder {
+  border-color: rgba(11, 60, 93, 0.2);
+  background: rgba(11, 60, 93, 0.03);
+}
+.area-kits > .container ul .best-option a .divider {
+  border-color: rgba(11, 60, 93, 0.15);
+}
+.area-kits > .container ul .best-option a li {
+  background: #fff;
+}
+.area-kits > .container ul .k3 a .main .area-img .save {
+  right: 5%;
+  top: 66%;
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul .k3 a .main .area-img .save {
+    top: 60%;
+  }
+}
+@media (max-width: 900px) {
+  .area-kits > .container ul .best-option {
+    grid-row: 1;
+  }
+  .area-kits > .container ul .k3 {
+    grid-row: 2;
+  }
+}
+
+.guarantee {
+  background: linear-gradient(97deg, #0c5282 0%, #0b3c5d 100%);
+  padding: 0;
+  position: relative;
+  overflow-y: visible;
+  overflow-x: clip;
+}
+@media (max-width: 900px) {
+  .guarantee {
+    padding: 40px 0;
+  }
+}
+.guarantee .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: center;
+  justify-items: center;
+  overflow-y: clip;
+}
+@media (min-width: 760px) {
+  .guarantee .container {
+    grid-template-columns: minmax(260px, 430px) minmax(0, 576px);
+    gap: 32px;
+    justify-content: center;
+    justify-items: stretch;
+    max-width: 1095px;
+  }
+}
+.guarantee__img {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 300px);
+}
+.guarantee__img::before {
+  content: "";
+  position: absolute;
+  top: -12%;
+  right: -24%;
+  width: 78%;
+  height: 72%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(100, 181, 231, 0.7) 0%, rgba(100, 181, 231, 0) 68%);
+  mix-blend-mode: plus-lighter;
+  pointer-events: none;
+  z-index: -1;
+}
+.guarantee__img img {
+  width: 100%;
+  filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.3));
+}
+@media (min-width: 760px) {
+  .guarantee__img {
+    width: min(100%, 430px);
+    align-self: end;
+    margin-bottom: -190px;
+  }
+}
+.guarantee__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 576px;
+  text-align: center;
+}
+.guarantee__content h2 {
+  color: #fff;
+  font-size: clamp(32px, 9vw, 40px);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+.guarantee__content p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 32px;
+  max-width: 542px;
+}
+.guarantee__content p strong {
+  color: inherit;
+  font-weight: 500;
+}
+.guarantee__content p a {
+  color: inherit;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.guarantee__content p a:hover {
+  color: #e4f4ff;
+}
+.guarantee__content .btn {
+  max-width: 395px;
+  min-height: 66px;
+}
+@media (max-width: 420px) {
+  .guarantee__content .btn {
+    max-width: 320px;
+    min-height: 58px;
+    font-size: 20px;
+    padding: 14px 18px;
+  }
+}
+@media (min-width: 760px) {
+  .guarantee__content {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.site-footer .footer-main {
+  background: #04344B;
+  padding: 80px 0 20px;
+  text-align: center;
+}
+.site-footer .footer-main > .container {
+  display: grid;
+  gap: 20px;
+}
+.site-footer .footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.site-footer .footer-brand .footer-logo {
+  max-width: 230px;
+}
+.site-footer .footer-brand .footer-name {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin: 0;
+}
+.site-footer .footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.site-footer .footer-nav a {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+.site-footer .footer-nav a:hover {
+  color: #fff;
+}
+.site-footer .footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.site-footer .footer-disclaimer {
+  padding: 24px 0;
+  margin: 0 auto;
+  border-top: 1px solid #FFF;
+  color: #E0F5FF;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.site-footer .footer-bottom {
+  background: linear-gradient(92deg, #0C5282 0.32%, #0B3C5D 98.3%);
+  padding: 20px 0;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.site-footer .footer-bottom p {
+  margin: 0;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.banner {
+  position: relative;
+  background: linear-gradient(90deg, #0B3C5D 0%, #115C8F 50%, #0B3C5D 100%);
+  text-align: center;
+  padding: 20px 0;
+}
+.banner::after {
+  content: "";
+  width: 161px;
+  height: 39px;
+  display: block;
+  position: absolute;
+  background: url("./assets/img-17ab6a9dcd.svg") no-repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  background-size: contain;
+  background-position: center;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.banner > .container {
+  display: grid;
+  max-width: 820px;
+  gap: 12px;
+  justify-items: center;
+  justify-items: center;
+}
+.banner h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 135%;
+}
+.banner h1 b {
+  color: inherit;
+  font-weight: 700;
+}
+@media (max-width: 900px) {
+  .banner h1 {
+    font-size: 26px;
+  }
+}
+.banner .contador {
+  display: inline-flex;
+  color: #ffdc17;
+  text-align: center;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  gap: 16px;
+  align-items: center;
+}
+.banner .contador::before {
+  content: "";
+  width: 72px;
+  height: 72px;
+  display: block;
+  background: url("./assets/img-bc215ff710.svg") no-repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  background-size: contain;
+  background-position: center;
+}
+
+.rotulo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.rotulo-container .rotulo {
+  max-width: 100%;
+}
+
+.main-header {
+  background: linear-gradient(135deg, #e50505, #b20f0f);
+}
+
+.main-header .top-bar {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-header .top-bar .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header .top-bar .container .logo {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 0;
+  color: #fff;
+}
+
+.main-header .top-bar .container .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.main-header .news-ticker {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.main-header .news-ticker .ticker-content {
+  display: inline-block;
+  animation: scroll 30s linear infinite;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-header .news-ticker .ticker-content p {
+  color: #fff;
+  font-size: 14px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.article-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.article-container .meta-info {
+  margin-bottom: 20px;
+}
+
+.article-container .meta-info .author-name {
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.article-container .meta-info .update-date {
+  font-size: 14px;
+  color: #888;
+}
+
+.article-container .main-headline {
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 900;
+  line-height: 1.2;
+  color: #2c3e50;
+  text-align: center;
+  max-width: 40ch;
+  margin: 0 auto;
+}
+
+.article-container .main-headline .highlight-red {
+  color: #c41e3a;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+}
+
+.viewer-counter {
+  text-align: center;
+  background: rgba(220, 53, 69, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  color: #c41e3a;
+  font-weight: 600;
+  margin: 0 auto 20px;
+  max-width: 400px;
+}
+
+.viewer-counter #viewer-number {
+  color: #000;
+}/*# sourceMappingURL=style.css.map */
+</style>
+    <script>
+      !(function (i, n) {
+        i._plt =
+          i._plt || (n && n.timeOrigin ? n.timeOrigin + n.now() : Date.now());
+      })(window, performance);
+    </script>
+    <link rel="preload" href="https://scripts.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/6a7b82f9e037a2d232bf35b1/v4/player.js" as="script">
+    <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+    <link rel="preload" href="https://cdn.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/6a7b7d6d4120a14850215d2f/main.m3u8" as="fetch">
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://images.converteai.net">
+    <link rel="dns-prefetch" href="https://license.vturb.com">
+    <style>
+      [data-delay] {
+        display: none;
+      }
+    </style>
+    <style>
+      html
+        body
+        div#cpd-undefined._A8FZTrq7_XMl35_KpnWY9J.cpd-bottom-left.cpd-sticky.cpd-default.cpd-light._1j2t1DPDp4o5VU-RniczLb.cpd-shift-1
+        div.cpd-ribbon,
+      html
+        body
+        div#cpd-NaN._4PYLmZq7_XTk38_AvrdW9E.cpd-bottom.cpd-sticky.cpd-default.cpd-light.cpd-with-footer
+        div.cpd-badge.cpd-container {
+        display: none !important;
+      }
+    </style>
+    <script>
+      var mysrc =
+        "https://tracking.buygoods.com/track/?a=13203&firstcookie=0" +
+        "&tracking_redirect=&referrer=" +
+        encodeURIComponent(document.referrer) +
+        "&sessid2=" +
+        ReadCookie("sessid2") +
+        "&product=ner2b,ner3b,ner6b&vid1=&vid2=&vid3=&caller_url=" +
+        encodeURIComponent(window.location.href);
+      if (typeof add_to_cart !== "undefined") {
+        mysrc = mysrc + "&add_to_cart=" + add_to_cart;
+      }
+      var newScript = document.createElement("script");
+      newScript.type = "text/javascript";
+      newScript.defer = true;
+      newScript.src = mysrc;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(newScript, s);
+      function ReadCookie(name) {
+        name += "=";
+        var parts = document.cookie.split(/;\s*/);
+        for (var i = 0; i < parts.length; i++) {
+          var part = parts[i];
+          if (part.indexOf(name) == 0) return part.substring(name.length);
+        }
+        return "";
+      }
+    </script>
+
+    <script type="text/javascript">
+      setTimeout(function () {
+        var i = document.createElement("iframe"),
+          oid = new URLSearchParams(window.location.search);
+        i.async = true;
+        i.style = "display:none";
+        i.setAttribute(
+          "src",
+          "https://buygoods.com/affiliates/go/conversion/iframe/bg?a=13203&t=b767196d5171fa3fa881fb6e410ca840&s=" +
+            ReadCookie("sessid2"),
+        );
+        document.body.appendChild(i);
+      }, 1000);
+    </script>
+  
+  
+    <!-- <div class="promo-banner">
+      <div class="container center">
+        <h1>
+          Claim Your Discounted
+          <b
+            >Nerve Relief Protocol<br />
+            Below For Huge Savings</b
+          >
+        </h1>
+
+        <b id="countdown" class="countdown">28:19</b>
+      </div>
+    </div> -->
+    <header class="main-header">
+      <div class="top-bar">
+        <div class="container">
+          <h1 class="logo">Nerve Science Daily</h1>
+          <button class="menu-toggle" aria-label="Open menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+      <div class="news-ticker">
+        <div class="ticker-content">
+          <p>The latest breakthroughs in neurological recovery and pain management.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <article class="article-container">
+        <div class="meta-info">
+          <p class="author-name">By Dr. Julian Rivers</p>
+          <p class="update-date">
+            Updated 30 minutes ago <span id="current-date">Updated just 5 minutes ago</span>
+          </p>
+        </div>
+
+        <h1 class="main-headline">
+          <span class="highlight-red">The 'Nerve Signal Jamming' Routine That Finally Silences Burning Nerve Pain</span>
+        </h1>
+      </article>
+
+      <!-- Video Section -->
+      <div class="video-container">
+        <vturb-smartplayer id="vid-6a7b82f9e037a2d232bf35b1" style="display: block; margin: 0 auto; width: 100%; max-width: 400px"><div class="vturb-player-placeholder" style="
+              position: relative;
+              width: 100%;
+              padding: 177.63157894736844% 0 0;
+              z-index: 0;
+              background-color: black;
+            "></div></vturb-smartplayer>
+        <script type="text/javascript">
+          var s = document.createElement("script");
+          ((s.src =
+            "https://scripts.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/6a7b82f9e037a2d232bf35b1/v4/player.js"),
+            (s.async = !0),
+            document.head.appendChild(s));
+        </script>
+      </div>
+
+      <!--<div class="news-logos">
+        <img
+          src="assets/img/news-logos.webp"
+          alt="As seen on major news networks"
+        />
+      </div>-->
+
+      <div class="viewer-counter">
+        <span id="viewer-number">842 people are reading this right now...</span> people watching now...
+      </div>
+    </main>
+
+    <main data-delay="">
+      <header class="banner">
+        <div class="container">
+          <h1>
+            Claim Your Discounted
+            <b>Nerve Relief Protocol<br>
+              Below For Huge Savings</b>
+          </h1>
+          <!-- <span id="contador" class="contador">08:28</span> -->
+        </div>
+      </header>
+      <section class="area-kits pd" id="kits" style="margin-bottom: 0">
+        <div class="container center">
+          <div class="text-area">
+            <h2 class="title">Secure Your Nerve Relief Protocol Today</h2>
+            <p class="sub">Choose your supply level and start your relief journey:</p>
+          </div>
+          <ul>
+            <li class="kit-option k1">
+              <a href="https://buygoods.com/secure/checkout.html?account_id=13203&amp;product_codename=ner2b&amp;redirect=aHR0cHM6Ly9iZy5uZXJ2ZXJlbGllZnByb3RvY29sLmNvbS9mYi1mZTEyMy1uci8=&amp;aff_id=146&amp;&amp;subid5=b2lkPW9mZl84MTM0MDM2JmFpZD1hZmZfMjkxNDkxOCZ1aWQ9YmxfNDY1MDIxNg%3D%3D" data-pdc-aff-param="subid">
+                <div class="header">Starter</div>
+
+                <div class="main">
+                  <div class="area-img">
+                    <img src="./assets/img-1b23fd7b90.webp" alt="">
+                  </div>
+                  <strong>2 BOTTLES</strong>
+                  <span class="days">60 Day Supply</span>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$79 /Bottle</strong> /Bottle</div>
+                  <hr class="divider">
+                  <ul>
+                    <li class="orrivi">FAST DISPATCH</li>
+                    <li class="orrivi">FREE SHIPPING</li>
+                    <!-- <li class="orrivi">FREE BONUS</li> -->
+                  </ul>
+                  <img src="./assets/img-ac1cb3b28d.png" class="buy-cta" alt="">
+                  <img src="./assets/img-b7cd12de52.png" alt="">
+
+                  <div class="valores dk">
+                    <span>TOTAL: <s>$358</s> $158</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="kit-option best-option">
+              <a href="https://buygoods.com/secure/checkout.html?account_id=13203&amp;product_codename=ner6b&amp;redirect=aHR0cHM6Ly9iZy5uZXJ2ZXJlbGllZnByb3RvY29sLmNvbS9mYS1mZTYtbnIv&amp;aff_id=146&amp;&amp;subid5=b2lkPW9mZl84MTM0MDM2JmFpZD1hZmZfMjkxNDkxOCZ1aWQ9YmxfMDI0NDc4MQ%3D%3D" data-pdc-aff-param="subid">
+                <div class="header">BEST VALUE</div>
+
+                <div class="main">
+                  <div class="area-img">
+                    <img src="./assets/img-43f4bb408c.webp" alt="">
+                    <img src="./assets/img-57916ef1f6.svg" alt="" class="frete">
+                    <div class="save">Save $780 Today</div>
+                  </div>
+                  <strong>6 BOTTLES</strong>
+                  <span class="days">180 Day Supply</span>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$49 /Bottle</strong> /Bottle</div>
+                  <hr class="divider">
+                  <ul>
+                    <li>60-DAY MONEY BACK</li>
+                    <li>FAST &amp; FREE SHIPPING</li>
+                    <!-- <li>2 FREE BONUSES!</li> -->
+                  </ul>
+                  <img src="./assets/img-ac1cb3b28d.png" class="buy-cta" alt="">
+                  <img src="./assets/img-b7cd12de52.png" alt="">
+
+                  <div class="valores dk">
+                    <span>TOTAL: <s>$1074</s> $294</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="kit-option k3">
+              <a href="https://buygoods.com/secure/checkout.html?account_id=13203&amp;product_codename=ner3b&amp;redirect=aHR0cHM6Ly9iZy5uZXJ2ZXJlbGllZnByb3RvY29sLmNvbS9mYi1mZTEyMy1uci8=&amp;aff_id=146&amp;&amp;subid5=b2lkPW9mZl84MTM0MDM2JmFpZD1hZmZfMjkxNDkxOCZ1aWQ9YmxfNTcxMTMyOA%3D%3D" data-pdc-aff-param="subid">
+                <div class="header">Standard</div>
+
+                <div class="main">
+                  <div class="area-img">
+                    <img src="./assets/img-67346ddad1.webp" alt="">
+                    <img src="./assets/img-57916ef1f6.svg" alt="" class="frete">
+                    <div class="save">Save $330 Today</div>
+                  </div>
+                  <strong>3 BOTTLES</strong>
+                  <span class="days">90 Day Supply</span>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$69 /Bottle</strong> /Bottle</div>
+                  <hr class="divider">
+                  <ul>
+                    <li>60-DAY MONEY BACK</li>
+                    <li>FAST &amp; FREE SHIPPING</li>
+                    <!-- <li>1 FREE BONUS!</li> -->
+                  </ul>
+                  <img src="./assets/img-ac1cb3b28d.png" class="buy-cta" alt="">
+                  <img src="./assets/img-b7cd12de52.png" alt="">
+
+                  <div class="valores dk">
+                    <span>TOTAL: <s>$537</s> $207</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- <img src="./assets/img-d2f73208fe.png" alt="" class="medalhas" /> -->
+        </div>
+      </section>
+      <header class="banner">
+        <div class="container">
+          <h1>
+            Claim Your Discounted
+            <b>Nerve Relief Protocol<br>
+              Below For Huge Savings</b>
+          </h1>
+          <!-- <span id="contador" class="contador">08:28</span> -->
+        </div>
+      </header>
+      <section class="area-kits pd">
+        <div class="container center">
+          <h2 class="title">Select Your Nerve Relief Protocol Plan</h2>
+          <p class="sub">Pick the best package to fully soothe your nerves:</p>
+          <ul>
+            <li class="kit-option k1">
+              <a href="https://buygoods.com/secure/checkout.html?account_id=13203&amp;product_codename=ner2b&amp;redirect=aHR0cHM6Ly9iZy5uZXJ2ZXJlbGllZnByb3RvY29sLmNvbS9mYi1mZTEyMy1uci8=&amp;aff_id=146&amp;&amp;subid5=b2lkPW9mZl84MTM0MDM2JmFpZD1hZmZfMjkxNDkxOCZ1aWQ9YmxfNDY1MDIxNg%3D%3D" data-pdc-aff-param="subid">
+                <div class="header">Starter</div>
+
+                <div class="main">
+                  <div class="area-img">
+                    <img src="./assets/img-1b23fd7b90.webp" alt="">
+                  </div>
+                  <strong>2 BOTTLES</strong>
+                  <span class="days">60 Day Supply</span>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$79 /Bottle</strong> /Bottle</div>
+                  <hr class="divider">
+                  <ul>
+                    <li class="orrivi">FAST DISPATCH</li>
+                    <li class="orrivi">FREE SHIPPING</li>
+                    <!-- <li class="orrivi">FREE BONUS</li> -->
+                  </ul>
+                  <img src="./assets/img-ac1cb3b28d.png" class="buy-cta" alt="">
+                  <img src="./assets/img-b7cd12de52.png" alt="">
+
+                  <div class="valores dk">
+                    <span>TOTAL: <s>$358</s> $158</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="kit-option best-option">
+              <a href="https://buygoods.com/secure/checkout.html?account_id=13203&amp;product_codename=ner6b&amp;redirect=aHR0cHM6Ly9iZy5uZXJ2ZXJlbGllZnByb3RvY29sLmNvbS9mYS1mZTYtbnIv&amp;aff_id=146&amp;&amp;subid5=b2lkPW9mZl84MTM0MDM2JmFpZD1hZmZfMjkxNDkxOCZ1aWQ9YmxfMDI0NDc4MQ%3D%3D" data-pdc-aff-param="subid">
+                <div class="header">BEST VALUE</div>
+
+                <div class="main">
+                  <div class="area-img">
+                    <img src="./assets/img-43f4bb408c.webp" alt="">
+                    <img src="./assets/img-57916ef1f6.svg" alt="" class="frete">
+                    <div class="save">Save $780 Today</div>
+                  </div>
+                  <strong>6 BOTTLES</strong>
+                  <span class="days">180 Day Supply</span>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$49 /Bottle</strong> /Bottle</div>
+                  <hr class="divider">
+                  <ul>
+                    <li>60-DAY MONEY BACK</li>
+                    <li>FAST &amp; FREE SHIPPING</li>
+                    <!-- <li>2 FREE BONUSES!</li> -->
+                  </ul>
+                  <img src="./assets/img-ac1cb3b28d.png" class="buy-cta" alt="">
+                  <img src="./assets/img-b7cd12de52.png" alt="">
+
+                  <div class="valores dk">
+                    <span>TOTAL: <s>$1074</s> $294</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="kit-option k3">
+              <a href="https://buygoods.com/secure/checkout.html?account_id=13203&amp;product_codename=ner3b&amp;redirect=aHR0cHM6Ly9iZy5uZXJ2ZXJlbGllZnByb3RvY29sLmNvbS9mYi1mZTEyMy1uci8=&amp;aff_id=146&amp;&amp;subid5=b2lkPW9mZl84MTM0MDM2JmFpZD1hZmZfMjkxNDkxOCZ1aWQ9YmxfNTcxMTMyOA%3D%3D" data-pdc-aff-param="subid">
+                <div class="header">Standard</div>
+
+                <div class="main">
+                  <div class="area-img">
+                    <img src="./assets/img-67346ddad1.webp" alt="">
+                    <img src="./assets/img-57916ef1f6.svg" alt="" class="frete">
+                    <div class="save">Save $330 Today</div>
+                  </div>
+                  <strong>3 BOTTLES</strong>
+                  <span class="days">90 Day Supply</span>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$69 /Bottle</strong> /Bottle</div>
+                  <hr class="divider">
+                  <ul>
+                    <li>60-DAY MONEY BACK</li>
+                    <li>FAST &amp; FREE SHIPPING</li>
+                    <!-- <li>1 FREE BONUS!</li> -->
+                  </ul>
+                  <img src="./assets/img-ac1cb3b28d.png" class="buy-cta" alt="">
+                  <img src="./assets/img-b7cd12de52.png" alt="">
+
+                  <div class="valores dk">
+                    <span>TOTAL: <s>$537</s> $207</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- <img src="./assets/img-d2f73208fe.png" alt="" class="medalhas" /> -->
+        </div>
+      </section>
+      <section class="guarantee">
+        <div class="container">
+          <div class="guarantee__img">
+            <img src="./assets/img-ed7bd8adc1.png" alt="Nerve Relief Protocol Bottle">
+          </div>
+          <div class="guarantee__content">
+            <h2>100% Satisfaction<br>&amp; 60-Day guarantee</h2>
+            <p>Your peace of mind is guaranteed for 60 days. If the Nerve Relief Protocol doesn't provide the comfort you expected, reach out to us and we will issue a full, no-questions-asked refund. Your satisfaction is our only priority.</p>
+            <a href="#kits" class="btn">Activate My Relief Now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="container">
+          <!--<div class="footer-brand">
+            <img
+              src="./assets/img-d346b01299.svg"
+              alt="Nerve Relief Protocol Logo"
+              class="footer-logo"
+            />
+          </div>-->
+
+          <nav class="footer-nav">
+            <a href="../terms.html">Terms of Service</a>
+            <a href="../privacy.html">Privacy Policy</a>
+            <a href="../contact.html">Contact Us</a>
+            <a href="../disclaimer.html">Medical Disclaimer</a>
+            <a href="../reference.html">References</a>
+            <a href="../refund.html">Refund Policy</a>
+            <a href="../shipping.html">Shipping Policy</a>
+          </nav>
+
+          <p class="footer-disclaimer">These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary. Consult with a qualified healthcare professional before starting any new supplement regimen or if you have concerns about your nerve health.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>Copyright 2026 © Nerve Relief Protocol. All Rights Reserved.</p>
+          <!-- <p>19655 E 35th Drive Suite 100 Aurora, CO 80011</p> -->
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var delaySeconds = 2580;
+      var player = document.querySelector("vturb-smartplayer");
+
+      player.addEventListener("player:ready", function () {
+        player.displayHiddenElements(delaySeconds, ["[data-delay]"], {
+          persist: true,
+        });
+
+        // SISTEMA DE VIGILÂNCIA (MutationObserver)
+        const target = document.querySelector("[data-delay]");
+        const observer = new MutationObserver((mutations) => {
+          mutations.forEach((mutation) => {
+            if (
+              mutation.attributeName === "style" ||
+              mutation.attributeName === "class"
+            ) {
+              const isVisible =
+                window.getComputedStyle(target).display !== "none";
+              if (isVisible && !window.scrolledOnce) {
+                window.scrolledOnce = true;
+                setTimeout(() => {
+                  document
+                    .getElementById("kits")
+                    .scrollIntoView({ behavior: "smooth" });
+                }, 300);
+              }
+            }
+          });
+        });
+
+        if (target) {
+          observer.observe(target, { attributes: true });
+        }
+      });
+    </script>
+
+    <script>
+      new Swiper(".testimonials-swiper", {
+        slidesPerView: 1.1,
+        spaceBetween: 20,
+        loop: true,
+        loopAdditionalSlides: 2,
+        centeredSlides: true,
+        speed: 500,
+        initialSlide: 2,
+        grabCursor: true,
+        touchRatio: 1,
+        threshold: 5,
+        pagination: {
+          el: ".testimonials-swiper .swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2.2,
+            spaceBetween: 24,
+            centeredSlides: true,
+          },
+          1024: {
+            slidesPerView: "auto",
+            spaceBetween: 24,
+            centeredSlides: true,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      const countdownElements = document.querySelectorAll(".contador");
+      let totalSeconds = 10 * 60;
+
+      function updateCountdown() {
+        if (totalSeconds <= 0) {
+          countdownElements.forEach((el) => (el.textContent = "00:00"));
+          return;
+        }
+
+        const minutes = String(Math.floor(totalSeconds / 60)).padStart(2, "0");
+        const seconds = String(totalSeconds % 60).padStart(2, "0");
+
+        countdownElements.forEach((el) => {
+          el.textContent = `${minutes}:${seconds}`;
+        });
+
+        totalSeconds--;
+        setTimeout(updateCountdown, 1000);
+      }
+
+      updateCountdown();
+    </script>
+
+    <script>
+function getQueryParams() {
+  return new URLSearchParams(window.location.search);
+}
+
+// Função para combinar os parâmetros do href original com os parâmetros da URL atual
+function combineParams(originalHref, currentParams) {
+  let [baseUrl, originalParamsString] = originalHref.split("?");
+  let originalParams = new URLSearchParams(originalParamsString || "");
+
+  // Adiciona os parâmetros atuais da URL aos parâmetros originais
+  currentParams.forEach((value, key) => {
+    // Verifica se o parâmetro já existe para evitar duplicação
+    if (!originalParams.has(key)) {
+      originalParams.append(key, value);
+    }
+  });
+
+  // Monta a URL final
+  let finalParamsString = originalParams.toString();
+  return finalParamsString ? `${baseUrl}?${finalParamsString}` : baseUrl;
+}
+
+// Adiciona os parâmetros da URL aos links de checkout
+document.addEventListener("DOMContentLoaded", function () {
+  let buttons = document.querySelectorAll(".area-kits a");
+  let currentParams = getQueryParams();
+
+  buttons.forEach(function (button) {
+    let originalHref = button.getAttribute("href");
+    button.setAttribute("href", combineParams(originalHref, currentParams));
+  });
+});
+</script>
+  
+
+</body></html>
